@@ -16,8 +16,8 @@ object Day4HealthExercise_Kristina extends App {
   val minTemp = 35
   val maxTemp = 37
 
-  if (temperature >= 35 && temperature <= 37) println(s"You are alright!, $name \n")
-  else if (temperature < 35) println(s"Aren't you a bit cold, $name?\n")
+  if (temperature >= minTemp && temperature <= maxTemp) println(s"You are alright!, $name \n")
+  else if (temperature < minTemp) println(s"Aren't you a bit cold, $name?\n")
   else println(s"$name, you have a fever! Consider contacting your doctor.\n")
 
 }
