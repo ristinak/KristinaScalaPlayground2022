@@ -18,6 +18,6 @@ object Day4HealthExercise_Kristina extends App {
 
   if (temperature >= minTemp && temperature <= maxTemp) println(s"You are alright!, $name \n")
   else if (temperature < minTemp) println(s"Aren't you a bit cold, $name?\n")
-  else println(s"$name, you have a fever! Consider contacting your doctor.\n")
+  else println("You have a fever! Consider contacting your doctor.\n")
 
 }
