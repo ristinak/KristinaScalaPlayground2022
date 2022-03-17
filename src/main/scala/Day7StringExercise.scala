@@ -7,11 +7,7 @@ object Day7StringExercise extends App {
     //you will probably want to use var to store a temporary string that you keep rewriting
     //return newly created string
 
-
-    var ourText = text
-    if (needsTrim == true) {
-      ourText = text.trim
-    }
+    val ourText = if (needsTrim) text.trim else text
     var newText = ourText
     for (upperC <- uppercaseChars) {
       if (ourText.contains(upperC)) {
