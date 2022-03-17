@@ -12,15 +12,13 @@ object Day7StringExercise extends App {
     if (needsTrim == true) {
       ourText = text.trim
     }
-
+    var newText = ourText
     for (upperC <- uppercaseChars) {
-      for (c <- text) {
-        if (c == upperC) {
-          ourText.replace(c, upperC.toUpper)
+      if (ourText.contains(upperC)) {
+          newText = newText.replace(upperC, upperC.toUpper)
         }
       }
-    }
-    ourText
+    newText
   }
 
   println(processString("abracadabra", "cr")) //should print abRaCadabRa
