@@ -1,14 +1,6 @@
-object Day6CityPopulation extends App {
-  //easy function
-  //TODO write a function (name it yourself) to calculate Farenheit from Celsius
-  //f = 32 + c*9/5
-  def celciusToFarenheit(tempInCelcius: Double = 36.6): Double = {
-    (32 + tempInCelcius*9/5)
-  }
+import jdk.jfr.Percentage
 
-  println(s"36.6 degrees C is ${celciusToFarenheit()} degrees Farenheit.")
-  println(s"37 degrees C is ${celciusToFarenheit(37)} degrees Farenheit.")
-  println(s"48.5 degrees C is ${celciusToFarenheit(48.5)} degrees Farenheit.")
+object Day6CityPopulation extends App {
 
   //TODO 2nd main TASK - not really related to first task
   println("Function to calculate city growth")
@@ -40,20 +32,36 @@ object Day6CityPopulation extends App {
    */
   def getCityYear(p0: Int, percentage: Double, delta: Int, targetPopulation: Int):Int = {
 
-    var numberOfYears = 0
-    if((0*percentage/100 > delta) & (targetPopulation > p0)) { // if the population is changing in the right direction
+    def nextYearPop(p0: Int, percentage: Double, delta: Int): Int = {
+      (p0*(1+percentage/100) + delta).toInt
+    }
 
+    def rightDirection(p0: Int = p0, percentage: Double = percentage, delta: Int = delta, targetPopulation: Int = targetPopulation):Boolean = {
+      Math.abs(nextYearPop(p0, percentage, delta) - targetPopulation) < Math.abs(p0 - targetPopulation)
+    }
+
+    def calculateYears(p0: Int = p0, percentage: Double, delta: Int, targetPopulation: Int): Int = {
+      var numberOfYears = 0
       var newPopulation = p0
       while (newPopulation < targetPopulation) {
-        newPopulation = (p0 + p0*percentage/100 + delta).toInt
+        newPopulation = nextYearPop(newPopulation, percentage, delta)
         numberOfYears += 1
       }
-  } else numberOfYears = -1
+      numberOfYears
+    }
+
+    var numberOfYears = 0
+
+    if (rightDirection() && (targetPopulation > p0)) {
+      calculateYears(p0, percentage, delta, targetPopulation)
+    } else if (rightDirection() && (targetPopulation < p0)) {
+      calculateYears(p0 = targetPopulation, percentage = (-percentage), delta = (-delta), targetPopulation = p0)
+    } else numberOfYears = -1
 
     numberOfYears
-
+  }
   println(getCityYear(1000,2,50,1200)) // should print 3
   println(getCityYear(1000,2,-50,1200)) // should print -1
   println(getCityYear(1500000,2.5,10000,2000000)) // should print 10
-}
+  println(getCityYear(1500,1,-100,1200)) // should print 4
 }
