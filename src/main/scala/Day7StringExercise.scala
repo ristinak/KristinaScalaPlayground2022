@@ -9,20 +9,16 @@ object Day7StringExercise extends App {
 
 
     var ourText = text
-    val newUpperCaseChars = uppercaseChars.toUpperCase
     if (needsTrim == true) {
       ourText = text.trim
     }
-    val lenUpperChars = uppercaseChars.length
 
-    var index = 0
-    while (index < lenUpperChars) {
+    for (upperC <- uppercaseChars) {
       for (c <- text) {
-        if (c == newUpperCaseChars(index)) {
-          ourText.replace(ourText(index), newUpperCaseChars(index))
+        if (c == upperC) {
+          ourText.replace(c, upperC.toUpper)
         }
       }
-      index += 1
     }
     ourText
   }
