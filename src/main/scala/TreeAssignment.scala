@@ -29,8 +29,8 @@ object TreesAssignment extends App {
     //for this exercise we are not going to adjust maximumHeight
     //TODO print the tree HINT: check the last entry in Day7Strings
 
-    val name = (symbol + readLine("What is your name?\n")*40).toUpperCase // a cheap way out :)
-    val height = readLine("What is your tree height (between 1 and 40?)\n").toInt
+    val name = (symbol + readLine("What is your name?\n")*maximumHeight).toUpperCase // a cheap way out :)
+    val height = readLine(s"What is your tree height (between 1 and $maximumHeight?)\n").toInt
 
     for (i <- 0 until height) {
       println(" "*(height-(i+1)) + (name(i)).toString*(i*2+1))
