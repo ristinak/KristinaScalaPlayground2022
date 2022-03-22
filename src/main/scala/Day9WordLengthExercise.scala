@@ -9,7 +9,7 @@ import scala.io.StdIn.readLine
 //you are allowed to use yield or map/filter
 object Day9WordLengthExercise extends App {
 
-  val sentence = readLine("Please enter a sentence: ")
+  val sentence = readLine("Please enter a sentence: ").trim
   val words = sentence.split(" ")
   val wordLengths = words.map(_.length)
   val wordsOverFive = words.filter(_.length > 5)
