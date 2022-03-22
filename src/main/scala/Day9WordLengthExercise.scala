@@ -10,7 +10,7 @@ import scala.io.StdIn.readLine
 object Day9WordLengthExercise extends App {
 
   val sentence = readLine("Please enter a sentence: ")
-  val words = sentence.split(",(?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)")
+  val words = sentence.split(" ")
   val wordLengths = words.map(_.length)
   val wordsOverFive = words.filter(_.length > 5)
 
