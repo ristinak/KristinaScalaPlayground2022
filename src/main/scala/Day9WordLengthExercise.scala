@@ -12,7 +12,7 @@ object Day9WordLengthExercise extends App {
   def betterSentence(sentence: String):String = {
     var betterSentence = sentence
     for (c <- sentence) {
-      if (!c.isLetter) {
+      if (!c.isLetter && c != '\'') { // keeping apostrophes as part of words
         betterSentence = betterSentence.replace(c, ' ')
         // replaces all punctuation with a space
       }
@@ -23,7 +23,7 @@ object Day9WordLengthExercise extends App {
 
   val sentence = readLine("Please enter a sentence:\n")
   val aBetterSentence = betterSentence(sentence)
-//  println(s"Your sentence without punctuation: $aBetterSentence\n")
+  println(s"Your sentence without punctuation: $aBetterSentence\n")
   val words = aBetterSentence.split(" ")
   val wordLengths = words.map(_.length)
   val wordsOverFive = words.filter(_.length > 5)
