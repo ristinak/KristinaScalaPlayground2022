@@ -9,10 +9,22 @@ import scala.io.StdIn.readLine
 //you are allowed to use yield or map/filter
 object Day9WordLengthExercise extends App {
 
-  val sentence = readLine("Please enter a sentence: ").trim
-  val betterSentence = sentence.replaceAll("\\p{Punct}","") // from Java, found online
-  // it only works if there are spaces between words, not only punctuation
-  val words = betterSentence.split(" ")
+  def betterSentence(sentence: String):String = {
+    var betterSentence = sentence
+    for (c <- sentence) {
+      if (!c.isLetter) {
+        betterSentence = betterSentence.replace(c, ' ')
+        // replaces all punctuation with a space
+      }
+    }
+    betterSentence.trim.replaceAll(" +", " ")
+    // removes duplicate spaces
+  }
+
+  val sentence = readLine("Please enter a sentence:\n")
+  val aBetterSentence = betterSentence(sentence)
+//  println(s"Your sentence without punctuation: $aBetterSentence\n")
+  val words = aBetterSentence.split(" ")
   val wordLengths = words.map(_.length)
   val wordsOverFive = words.filter(_.length > 5)
 
