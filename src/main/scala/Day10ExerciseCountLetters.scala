@@ -15,8 +15,6 @@ object Day10ExerciseCountLetters extends App {
 //  var myMuteMap: scala.collection.mutable.Map[Char, Int] = Map(
 //    for (i <- 1 to myString.length) yield (myString(i-1), i))
 
-
-//   A sequence
   val myCollection = for (i <- 1 to myString.length) yield (myString(i-1), i)
   val myMuteMap = myCollection.toMap
 
