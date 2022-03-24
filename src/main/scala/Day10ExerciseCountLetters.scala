@@ -18,6 +18,8 @@ object Day10ExerciseCountLetters extends App {
 
 //   A sequence
   val myCollection = for (i <- 1 to myString.length) yield (myString(i-1), i)
-  println(myCollection.mkString)
+  val myMuteMap = myCollection.toMap
+
+  println(myMuteMap.mkString(", "))
 
 }
