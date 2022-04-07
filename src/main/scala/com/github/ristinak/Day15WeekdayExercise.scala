@@ -1,8 +1,8 @@
-import java.util.Calendar
+package com.github.ristinak
 
 object Day15WeekdayExercise extends App {
 
-  def getDay(day:Int): String = day match {
+  def getDay(day: Int): String = day match {
     case 1 => "Monday"
     case 2 => "Tuesday"
     case 3 => "Wednesday"

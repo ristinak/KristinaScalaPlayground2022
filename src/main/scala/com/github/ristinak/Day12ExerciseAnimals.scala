@@ -1,3 +1,5 @@
+package com.github.ristinak
+
 import scala.collection.mutable
 
 class Animal(val name:String,

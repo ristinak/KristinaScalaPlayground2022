@@ -1,3 +1,5 @@
+package com.github.ristinak
+
 import java.time.Year
 import scala.io.StdIn.readLine
 

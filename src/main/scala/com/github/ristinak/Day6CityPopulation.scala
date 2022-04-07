@@ -1,4 +1,4 @@
-import jdk.jfr.Percentage
+package com.github.ristinak
 
 object Day6CityPopulation extends App {
 
@@ -24,19 +24,20 @@ object Day6CityPopulation extends App {
 
   /**
    * getCityYear
-   * @param p0 - original City population
-   * @param percentage - yearly growth rate in percentages
-   * @param delta - how many people immigrate(+)/emigrate to the city each year
+   *
+   * @param p0               - original City population
+   * @param percentage       - yearly growth rate in percentages
+   * @param delta            - how many people immigrate(+)/emigrate to the city each year
    * @param targetPopulation - population we want to reach
    * @return number of years to reach , -1 if not reachable
    */
-  def getCityYear(p0: Int, percentage: Double, delta: Int, targetPopulation: Int):Int = {
+  def getCityYear(p0: Int, percentage: Double, delta: Int, targetPopulation: Int): Int = {
 
     def nextYearPop(p0: Int, percentage: Double, delta: Int): Int = {
-      (p0*(1+percentage/100) + delta).toInt
+      (p0 * (1 + percentage / 100) + delta).toInt
     }
 
-    def rightDirection(p0: Int = p0, percentage: Double = percentage, delta: Int = delta, targetPopulation: Int = targetPopulation):Boolean = {
+    def rightDirection(p0: Int = p0, percentage: Double = percentage, delta: Int = delta, targetPopulation: Int = targetPopulation): Boolean = {
       Math.abs(nextYearPop(p0, percentage, delta) - targetPopulation) < Math.abs(p0 - targetPopulation)
     }
 
@@ -60,8 +61,9 @@ object Day6CityPopulation extends App {
 
     numberOfYears
   }
-  println(getCityYear(1000,2,50,1200)) // should print 3
-  println(getCityYear(1000,2,-50,1200)) // should print -1
-  println(getCityYear(1500000,2.5,10000,2000000)) // should print 10
-  println(getCityYear(1500,1,-100,1200)) // should print 4
+
+  println(getCityYear(1000, 2, 50, 1200)) // should print 3
+  println(getCityYear(1000, 2, -50, 1200)) // should print -1
+  println(getCityYear(1500000, 2.5, 10000, 2000000)) // should print 10
+  println(getCityYear(1500, 1, -100, 1200)) // should print 4
 }

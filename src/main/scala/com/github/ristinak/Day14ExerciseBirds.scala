@@ -1,3 +1,5 @@
+package com.github.ristinak
+
 trait FlightTrait {
   def fly(): Unit = println("I'm flying!")
 }

@@ -1,4 +1,4 @@
-import scala.collection.mutable.ArrayBuffer
+package com.github.ristinak
 
 class Song(title: String = "", author: String= "", lyrics:Seq[String]){
 
@@ -22,7 +22,7 @@ class Song(title: String = "", author: String= "", lyrics:Seq[String]){
   def sing(maxLines: Int = -1):Song= {
     printTitle()
     printLyrics(lyrics, maxLines) //sometimes these pass along chains can get too long 3 or 4 functions deep
-    this //so we return a Song itself so then we can chain the next command
+    this //so we return a com.github.ristinak.Song itself so then we can chain the next command
   }
 
   def yell(maxLines: Int = -1):Song = {
@@ -45,7 +45,7 @@ class Song(title: String = "", author: String= "", lyrics:Seq[String]){
 class Rap(title:String, author:String, lyrics: Seq[String])
   extends Song(title:String, author:String, lyrics: Seq[String]) {
 
-  //now any Rap will have access to ALL Song methods and values /fields
+  //now any com.github.ristinak.Rap will have access to ALL com.github.ristinak.Song methods and values /fields
   def dropIt(drop:String, maxLines:Int = -1): Unit = {
     println(s"Dropping some beats with $drop on $title")
     val linesOfWords = for (line <- lyrics) yield line.split(" ")

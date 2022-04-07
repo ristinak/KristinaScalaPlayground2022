@@ -1,5 +1,4 @@
-
-
+package com.github.ristinak
 
 object Day13ExerciseSongSolvedBetter extends App {
   println("Let's make and sing some Songs!")
@@ -27,7 +26,7 @@ object Day13ExerciseSongSolvedBetter extends App {
       "She took the midnight train goin' anywhere",
       "Just a city boy",
       "Born and raised in south Detroit",
-      "He took the midnight train goin' anywhere","..."))
+      "He took the midnight train goin' anywhere", "..."))
 
 
   //jingleBells.sing(3)

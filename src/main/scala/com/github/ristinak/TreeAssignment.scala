@@ -1,3 +1,5 @@
+package com.github.ristinak
+
 import scala.io.StdIn.readLine
 
 object TreesAssignment extends App {

@@ -1,3 +1,5 @@
+package com.github.ristinak
+
 object Weekdays extends Enumeration {
   type Weekday = Value
   val Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday = Value
