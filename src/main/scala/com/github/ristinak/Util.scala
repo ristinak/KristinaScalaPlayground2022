@@ -90,6 +90,12 @@ object Util {
     html.mkString //so we just get a string representation it could be pure txt, it be html, it be xml,
   }
 
+  // This is my additional method - get an Array of lines from Web
+  def getLinesFromWeb(url: String): Array[String] = {
+    val html = Source.fromURL(url).getLines().toArray
+    html
+  }
+
   /**
    *
    * @param url - web resource locator
