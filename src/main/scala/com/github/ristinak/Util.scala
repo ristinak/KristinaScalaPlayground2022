@@ -4,7 +4,10 @@ import java.io.{File, FileWriter}
 import java.nio.file.{Files, Paths}
 import scala.io.Source
 
+
 object Util {
+
+
   //we are not going to use this directly thus not extends App
   //we will keep useful Utilities inside
 
@@ -92,9 +95,15 @@ object Util {
 
   // This is my additional method - get an Array of lines from Web
   def getLinesFromWeb(url: String): Array[String] = {
-    val html = Source.fromURL(url).getLines().toArray
+    val source = Source.fromURL(url)
+    val html = source.getLines().toArray
+    source.close()
     html
   }
+
+//  def getWebTitle(url: String): String = {
+//    val browser = JsoupBrowser()
+//  }
 
   /**
    *
