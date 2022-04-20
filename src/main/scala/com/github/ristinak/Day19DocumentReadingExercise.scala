@@ -2,6 +2,7 @@ package com.github.ristinak
 
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import scala.io.Source
 
 case class Document(title: String = "", author: String = "", url: String = "", rows: Array[String] = Array[String]()) {
   val rowCount: Int = rows.length
@@ -15,10 +16,6 @@ case class Document(title: String = "", author: String = "", url: String = "", r
     formattedTimeStamp
   }
 
-  // returns a file name in the format of author_title_timestamp.txt
-  def getFileName: String = {
-    author.slice(0,10) + "_" + title.slice(0,15) + "_" + getTimeStamp + ".txt"
-  }
   // returns the original lines with 3 additional lines in the beginning
   def appendLines: Array[String] = {
     val firstLine:String = s"URL: $url"
@@ -28,43 +25,61 @@ case class Document(title: String = "", author: String = "", url: String = "", r
     newLines
   }
 
-  def save(dst: String = "", folder: String = "src/resources/texts"): Unit = {
+  def save(dst: String = "", folder: String = "src/resources/texts"): String = {
     val newLines = appendLines
-    val dstPath: String = if (dst == "") folder + "/" + getFileName else folder + "/" + dst
+    val dstPath: String = {
+      if (dst == "") folder + "/" + author.slice(0,10) + "_" + title.slice(0,15) + "_" + getTimeStamp + ".txt"
+      else folder + "/" + dst + "_" + getTimeStamp + ".txt"
+    }
     Util.saveLines(dstPath, newLines)
+    dstPath
   }
 }
 
-object Day19DocumentReadingExercise extends App {
+object Day19DocumentReadingExercise {
   //TODO create a program that reads web addresses from a file and downloads multiple files with some changes
   //check for system arguments (see Day14commandArguments )
   //use first argument as filePath to process
   //otherwise default filePath will be src/resources/webPages.txt
 
-  def getDocumentsFromUrls(urls:Array[String]):Array[Document] = {
+  //returns an Array of lines from Web
+  def getLinesFromWeb(url: String): Array[String] = {
+    val source = Source.fromURL(url)
+    val html = source.getLines().toArray
+    source.close()
+    html
+  }
+
+  def getDocumentsFromUrls(urls: Array[String]): Array[Document] = {
     val documentArray = for (url <- urls) yield {
-      val rows = Util.getLinesFromWeb(url)
+      val rows = getLinesFromWeb(url)
       //      val title = if (url.endsWith(".txt")) GutenbergUtil.getTitle(rows) else {url.split("/").last}
       // the above doesn't work if there is a colon (:) - then the .txt file is not named properly
-      val title = if (url.endsWith(".txt")) GutenbergUtil.getTitle(rows) else {url.split("\\p{Punct}").last}
-      val author = if (url.endsWith(".txt")) GutenbergUtil.getAuthor(rows) else {url.split("/")(2)}
+      val title = if (url.endsWith(".txt")) GutenbergUtil.getTitle(rows) else {
+        url.split("\\p{Punct}").last
+      }
+      val author = if (url.endsWith(".txt")) GutenbergUtil.getAuthor(rows) else {
+        url.split("/")(2)
+      }
       Document(title, author, url, rows)
     }
     documentArray
-}
-  //  val filePath = if (args(0) != "") args(0) else "src/resources/webPages.txt"
-  val filePath = "src/resources/webPages.txt"
-  val fileLines = Util.getLinesFromFile(filePath)
-  val urlArray = for (line <- fileLines) yield {
-    if (line.startsWith("http://") || line.startsWith("https://")) line
-    else "https://" + line
-  }
-  val myDocumentArray = getDocumentsFromUrls(urlArray)
-  for (doc <- myDocumentArray) {
-    val dstPath = doc.getFileName
-    doc.save(dstPath)
-    println(s"Just saved ${doc.title} by ${doc.author} from ${doc.url} to file $dstPath.")
-    Thread.sleep(200)
   }
 
+  def main(args: Array[String]): Unit = {
+    val filePath = if (!args.isEmpty) args(0) else "src/resources/webPages.txt"
+    //    val filePath = "src/resources/webPages.txt"
+    val fileLines = Util.getLinesFromFile(filePath)
+    val urlArray = for (line <- fileLines) yield {
+      if (line.startsWith("http://") || line.startsWith("https://")) line
+      else "https://" + line
+    }
+    val myDocumentArray = getDocumentsFromUrls(urlArray)
+    for (doc <- myDocumentArray) {
+      val dstPath = doc.save() //saves the file and returns the destination path as String
+      println(s"Just saved ${doc.title} by ${doc.author} from ${doc.url} to file $dstPath")
+      Thread.sleep(200)
+    }
+  }
 }
+
