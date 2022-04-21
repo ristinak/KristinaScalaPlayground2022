@@ -56,10 +56,11 @@ object Day19DocumentReadingExercise {
       //      val title = if (url.endsWith(".txt")) GutenbergUtil.getTitle(rows) else {url.split("/").last}
       // the above doesn't work if there is a colon (:) - then the .txt file is not named properly
       val title = if (url.endsWith(".txt")) GutenbergUtil.getTitle(rows) else {
-        url.split("\\p{Punct}").last
+        url.split("\\p{Punct}").last //takes the last "word" in a url
+        //I'd rather scrape the html code and get the <title> tag
       }
       val author = if (url.endsWith(".txt")) GutenbergUtil.getAuthor(rows) else {
-        url.split("/")(2)
+        url.split("/")(2) //takes the first "word" after http://
       }
       Document(title, author, url, rows)
     }
@@ -68,7 +69,6 @@ object Day19DocumentReadingExercise {
 
   def main(args: Array[String]): Unit = {
     val filePath = if (!args.isEmpty) args(0) else "src/resources/webPages.txt"
-    //    val filePath = "src/resources/webPages.txt"
     val fileLines = Util.getLinesFromFile(filePath)
     val urlArray = for (line <- fileLines) yield {
       if (line.startsWith("http://") || line.startsWith("https://")) line
