@@ -24,7 +24,7 @@ case class Document(title: String = "", author: String = "", url: String = "", r
     val newLines: Array[String] = Array(firstLine, secondLine, thirdLine, "\n\n\n") ++ rows
     newLines
   }
-
+  //saves lines (an Array of String) to a file after creating a custom file name
   def save(dst: String = "", folder: String = "src/resources/texts"): String = {
     val newLines = appendLines
     val dstPath: String = {
@@ -37,10 +37,6 @@ case class Document(title: String = "", author: String = "", url: String = "", r
 }
 
 object Day19DocumentReadingExercise {
-  //TODO create a program that reads web addresses from a file and downloads multiple files with some changes
-  //check for system arguments (see Day14commandArguments )
-  //use first argument as filePath to process
-  //otherwise default filePath will be src/resources/webPages.txt
 
   //returns an Array of lines from Web
   def getLinesFromWeb(url: String): Array[String] = {
@@ -50,6 +46,7 @@ object Day19DocumentReadingExercise {
     html
   }
 
+  //returns an array of Document class objects
   def getDocumentsFromUrls(urls: Array[String]): Array[Document] = {
     val documentArray = for (url <- urls) yield {
       val rows = getLinesFromWeb(url)

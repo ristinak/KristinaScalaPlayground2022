@@ -1,0 +1,480 @@
+URL: https://lt.wikipedia.org/wiki/Vikipedija:Savait%C4%97s_iniciatyva
+Author: lt.wikipedia.org
+Title: iniciatyva
+
+
+
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="lt" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Vikipedija:Savaitės iniciatyva – Vikipedija</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","sausio","vasario","kovo","balandžio","gegužės","birželio","liepos","rugpjūčio","rugsėjo","spalio","lapkričio","gruodžio"],"wgRequestId":"efe41a0e-18b9-4ba0-b04e-a0ab57929840","wgCSPNonce":false,"wgCanonicalNamespace":"Project","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":4,"wgPageName":"Vikipedija:Savaitės_iniciatyva","wgTitle":"Savaitės iniciatyva","wgCurRevisionId":6560464,"wgRevisionId":6560464,"wgArticleId":14146,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Savaitės iniciatyvų dalyviai","Savaitės iniciatyva"],"wgPageContentLanguage":"lt","wgPageContentModel":"wikitext","wgRelevantPageName":"Vikipedija:Savaitės_iniciatyva","wgRelevantArticleId":14146,"wgIsProbablyEditable":true,
+"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVisualEditor":{"pageLanguageCode":"lt","pageLanguageDir":"ltr","pageVariantFallbacks":"lt"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":3000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":8,"wgULSCurrentAutonym":"lietuvių","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgDiscussionToolsFeaturesEnabled":{"replytool":true,"newtopictool":false,"sourcemodetoolbar":true,"topicsubscription":false,"autotopicsub":false},"wgDiscussionToolsFallbackEditMode":"visual","wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q3906662","wgGENewcomerTasksGuidanceEnabled":true,"wgGEAskQuestionEnabled":true,"wgGELinkRecommendationsFrontendEnabled":false,"wgSiteNoticeId":"2.5"};RLSTATE
+={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.discussionTools.init.styles":"ready","skins.vector.styles.legacy":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.dismissableSiteNotice.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.vector.legacy.js","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.popups","ext.discussionTools.init","ext.uls.compactlinks","ext.uls.interface","ext.dismissableSiteNotice"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=lt&amp;modules=ext.discussionTools.init.styles%7Cext.dismissableSiteNotice.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=lt&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=lt&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.39.0-wmf.7"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="Vikipedija:Savaitės iniciatyva – Vikipedija"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//lt.m.wikipedia.org/wiki/Vikipedija:Savait%C4%97s_iniciatyva"/>
+<link rel="alternate" type="application/x-wiki" title="Keisti" href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Vikipedija (lt)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//lt.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://lt.wikipedia.org/wiki/Vikipedija:Savait%C4%97s_iniciatyva"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="ext-discussiontools-replytool-enabled ext-discussiontools-sourcemodetoolbar-enabled mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-4 ns-subject mw-editable page-Vikipedija_Savaitės_iniciatyva rootpage-Vikipedija_Savaitės_iniciatyva skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --><div id="mw-dismissablenotice-anonplace"></div><script>(function(){var node=document.getElementById("mw-dismissablenotice-anonplace");if(node){node.outerHTML="\u003Cdiv class=\"mw-dismissable-notice\"\u003E\u003Cdiv class=\"mw-dismissable-notice-close\"\u003E[\u003Ca tabindex=\"0\" role=\"button\"\u003Epaslėpti\u003C/a\u003E]\u003C/div\u003E\u003Cdiv class=\"mw-dismissable-notice-body\"\u003E\u003Cdiv id=\"localNotice\"\u003E\u003Cdiv class=\"sitenotice\" lang=\"lt\" dir=\"ltr\"\u003E\u003Cp\u003EŠios \u003Ca href=\"/wiki/Vikipedija:Savait%C4%97s_iniciatyva\" title=\"Vikipedija:Savaitės iniciatyva\"\u003Esavaitės iniciatyva\u003C/a\u003E: \u003Cb\u003Ematematikos ir fizikos terminai\u003C/b\u003E. Kviečiame prisidėti!\n\u003C/p\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E";}}());</script></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">Vikipedija:Savaitės iniciatyva</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">Puslapis iš Vikipedijos, laisvosios enciklopedijos.</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="lt" dir="ltr"><div class="mw-parser-output"><p><br/>
+</p>
+<table cellspacing="0" border="0" style="background:none; width:100%; margin-top:-20px">
+<tbody><tr>
+<td>
+</td></tr>
+<tr>
+<td style="text-align:center; padding: 1.3em 1.3em; background-color:#d0f0c0; border:1px solid #009A63; border-right:0">
+<p><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Text-x-generic_with_pencil-2.svg/38px-Text-x-generic_with_pencil-2.svg.png" decoding="async" width="38" height="38" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Text-x-generic_with_pencil-2.svg/57px-Text-x-generic_with_pencil-2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Text-x-generic_with_pencil-2.svg/76px-Text-x-generic_with_pencil-2.svg.png 2x" data-file-width="61" data-file-height="61"/>
+</p>
+<div style="position:relative; top:.25em; font-size:120%"><b>Savaitės iniciatyva</b></div>
+<p>Kiekvieną savaitę ar kiek rečiau yra pasirenkama viena svarbi tema, kuriai siūloma skirti papildomą dėmesį kuriant ir tobulinant straipsnius – skelbiama <b>savaitės iniciatyva</b>. Idealūs kandidatai savaitės iniciatyvai – temos, įdomios daugeliui Vikipedijos dalyvių, ne pernelyg siauros specifikos, kad prie jų galėtų prisidėti kuo daugiau vartotojų. Gera mintis yra savaitės iniciatyvą sieti su kokiomis nors žymiomis tos savaitės datomis.
+</p><p>Jei norite prisidėti prie savaitės iniciatyvos, peržiūrėkite šiame puslapyje, kokie papildymai ir nauji straipsniai reikalingi, jei manote, kad reikia padaryti daugiau – įrašykite arba tiesiog imkitės darbo.
+</p><p>Idėjas kitų savaičių iniciatyvoms galite įrašyti, taip pat palaikyti kurį nors esamą pasiūlymą <a href="/wiki/Vikipedija:Savait%C4%97s_iniciatyvos_pasi%C5%ABlymai" title="Vikipedija:Savaitės iniciatyvos pasiūlymai">šiame puslapyje</a>.
+</p><p>Maloniai kviečiame prisidėti ir savo atliktą darbą įrašyti į rezultatų lentelę. Žymiau prisidėję naudotojai bus atitinkamai pagerbti.
+</p>
+</td></tr>
+<tr>
+<td>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Matematikos_ir_fizikos_terminai" data-mw-comment="{&quot;type&quot;:&quot;heading&quot;,&quot;level&quot;:0,&quot;id&quot;:&quot;h-Matematikos_ir_fizikos_terminai&quot;,&quot;replies&quot;:[],&quot;headingLevel&quot;:2,&quot;placeholderHeading&quot;:false,&quot;name&quot;:&quot;h-&quot;}"><span data-mw-comment-start="" id="h-Matematikos_ir_fizikos_terminai"></span>Matematikos ir fizikos terminai<span data-mw-comment-end="h-Matematikos_ir_fizikos_terminai"></span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;action=edit&amp;section=1" title="Redaguoti skyrelį: Matematikos ir fizikos terminai">redaguoti vikitekstą</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b>Trūkstami</b> 
+</p>
+<ul><li><a href="/w/index.php?title=Atstumas&amp;action=edit&amp;redlink=1" class="new" title="Atstumas (puslapis neegzistuoja)">Atstumas</a> (<a href="https://en.wikipedia.org/wiki/Distance" class="extiw" title="en:Distance">en:Distance</a>)</li>
+<li><a href="/w/index.php?title=De%C5%A1imtain%C4%97_sistema&amp;action=edit&amp;redlink=1" class="new" title="Dešimtainė sistema (puslapis neegzistuoja)">Dešimtainė sistema</a> (<a href="https://en.wikipedia.org/wiki/Decimal" class="extiw" title="en:Decimal">en:Decimal</a>, <a rel="nofollow" class="external text" href="https://www.vle.lt/straipsnis/desimtaine-sistema/">VLE</a>)</li>
+<li><a href="/wiki/Dimensija" class="mw-disambig" title="Dimensija">Dimensija</a> (<a href="https://en.wikipedia.org/wiki/Dimension" class="extiw" title="en:Dimension">en:Dimension</a>, nėra straipsnio, aprašančio dimensiją)</li>
+<li><a href="/wiki/Farenheito_skal%C4%97" title="Farenheito skalė">Farenheito skalė</a> (<a href="https://en.wikipedia.org/wiki/Degree_Fahrenheit" class="extiw" title="en:Degree Fahrenheit">en:Degree Fahrenheit</a>)</li>
+<li><a href="/w/index.php?title=Inercija&amp;action=edit&amp;redlink=1" class="new" title="Inercija (puslapis neegzistuoja)">Inercija</a> (<a href="https://en.wikipedia.org/wiki/Inerton" class="extiw" title="en:Inerton">en:Inerton</a>)</li>
+<li><a href="/wiki/Integralas" class="mw-disambig" title="Integralas">Integralas</a> (<a href="https://en.wikipedia.org/wiki/Integral" class="extiw" title="en:Integral">en:Integral</a>, nėra straipsnio, bendrai aprašančio integralą)</li>
+<li><a href="/w/index.php?title=Kintamasis&amp;action=edit&amp;redlink=1" class="new" title="Kintamasis (puslapis neegzistuoja)">Kintamasis</a> (<a href="https://en.wikipedia.org/wiki/Variable" class="extiw" title="en:Variable">en:Variable</a>)</li>
+<li><a href="/w/index.php?title=Pasaulio_%C5%A1alis&amp;action=edit&amp;redlink=1" class="new" title="Pasaulio šalis (puslapis neegzistuoja)">Pasaulio šalis</a> (<a href="https://en.wikipedia.org/wiki/Cardinal_direction" class="extiw" title="en:Cardinal direction">en:Cardinal direction</a>)</li>
+<li><a href="/w/index.php?title=Penkiakampis&amp;action=edit&amp;redlink=1" class="new" title="Penkiakampis (puslapis neegzistuoja)">Penkiakampis</a> (<a href="https://en.wikipedia.org/wiki/Pentagon" class="extiw" title="en:Pentagon">en:Pentagon</a>)</li>
+<li><a href="/wiki/Spinduliavimas" class="mw-redirect" title="Spinduliavimas">Spinduliavimas</a> (<a href="https://en.wikipedia.org/wiki/Radiation" class="extiw" title="en:Radiation">en:Radiation</a>)</li></ul>
+<p><b>Papildytini ar sutvarkytini</b> 
+</p>
+<ul><li><a href="/wiki/Algebra" title="Algebra">Algebra</a> (trumpas apimtimi, trūksta šaltinių)</li>
+<li><a href="/wiki/Begalyb%C4%97" title="Begalybė">Begalybė</a> (trumpas apimtimi, trūksta šaltinių)</li>
+<li><a href="/wiki/Fizika" title="Fizika">Fizika</a> (trūksta šaltinių)</li>
+<li><a href="/wiki/Matematika" title="Matematika">Matematika</a> (trūksta šaltinių)</li>
+<li><a href="/wiki/Pi" title="Pi">Pi</a> (trūksta šaltinių)</li></ul>
+<dl><dd><dl><dd><dl><dd><a href="/wiki/%C5%A0ablonas:Tr%C5%ABkstami" title="Šablonas:Trūkstami">Redaguoti sąrašą</a></dd></dl></dd></dl></dd></dl>
+<h2><span class="mw-headline" id="Eiga" data-mw-comment="{&quot;type&quot;:&quot;heading&quot;,&quot;level&quot;:0,&quot;id&quot;:&quot;h-Eiga&quot;,&quot;replies&quot;:[],&quot;headingLevel&quot;:2,&quot;placeholderHeading&quot;:false,&quot;name&quot;:&quot;h-&quot;}"><span data-mw-comment-start="" id="h-Eiga"></span>Eiga<span data-mw-comment-end="h-Eiga"></span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;action=edit&amp;section=2" title="Redaguoti skyrelį: Eiga">redaguoti vikitekstą</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Rinkdami statistiką prašome prisidėjusius naudotojus įrašyti savo indėlį šioje lentelėje. Jei nežinote, kaip tai padaryti, galite kreiptis į savaitės iniciatyvos koordinatorių <a href="/wiki/Naudotojas:Powermelon" title="Naudotojas:Powermelon">Powermelon</a>.
+</p>
+<table width="100%" cellpadding="2" cellspacing="5" style="vertical-align:top; background-color:#d0f0c0; -moz-border-radius:10px">
+<tbody><tr>
+<td><b>Jau prisidėję naudotojai</b></td>
+<td><b>Naujai sukurti straipsniai</b></td>
+<td><b>Išplėsti arba sutvarkyti straipsniai</b></td>
+<td><b>Naujų straipsnių skaičius</b></td>
+<td><b>Išplėstų arba sutvarkytų straipsnių skaičius</b>
+</td></tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>
+</td></tr>
+</tbody></table>
+<h2><span id="Kita_savait.C4.97s_iniciatyva"></span><span class="mw-headline" id="Kita_savaitės_iniciatyva" data-mw-comment="{&quot;type&quot;:&quot;heading&quot;,&quot;level&quot;:0,&quot;id&quot;:&quot;h-Kita_savait\u0117s_iniciatyva&quot;,&quot;replies&quot;:[],&quot;headingLevel&quot;:2,&quot;placeholderHeading&quot;:false,&quot;name&quot;:&quot;h-&quot;}"><span data-mw-comment-start="" id="h-Kita_savaitės_iniciatyva"></span>Kita savaitės iniciatyva<span data-mw-comment-end="h-Kita_savaitės_iniciatyva"></span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;action=edit&amp;section=3" title="Redaguoti skyrelį: Kita savaitės iniciatyva">redaguoti vikitekstą</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><i><b><a href="/wiki/Vikipedija:Savait%C4%97s_iniciatyvos_pasi%C5%ABlymai" title="Vikipedija:Savaitės iniciatyvos pasiūlymai">Pasiūlykite temą</a></b> savaitės iniciatyvai</i>.</li></ul>
+<h2 class="ext-discussiontools-init-section"><span id="Prisid.C4.97j.C4.99_naudotojai"></span><span class="mw-headline" id="Prisidėję_naudotojai" data-mw-comment="{&quot;type&quot;:&quot;heading&quot;,&quot;level&quot;:0,&quot;id&quot;:&quot;h-Prisid\u0117j\u0119_naudotojai-2022-04-19T05:37:00.000Z&quot;,&quot;replies&quot;:[&quot;c-Powermelon-2022-04-19T05:37:00.000Z-Prisid\u0117j\u0119_naudotojai&quot;],&quot;headingLevel&quot;:2,&quot;placeholderHeading&quot;:false,&quot;name&quot;:&quot;h-Powermelon-2022-04-19T05:37:00.000Z&quot;}"><span data-mw-comment-start="" id="h-Prisidėję_naudotojai-2022-04-19T05:37:00.000Z"></span>Prisidėję naudotojai<span data-mw-comment-end="h-Prisidėję_naudotojai-2022-04-19T05:37:00.000Z"></span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;action=edit&amp;section=4" title="Redaguoti skyrelį: Prisidėję naudotojai">redaguoti vikitekstą</a><span class="mw-editsection-bracket">]</span></span><!--__DTSUBSCRIBE__h-Powermelon-2022-04-19T05:37:00.000Z--></h2>
+<p><span data-mw-comment-start="" id="c-Powermelon-2022-04-19T05:37:00.000Z-Prisidėję_naudotojai"></span>Iš anksto dėkojame visiems kuriantiems ir pildantiems projekto straipsnius.
+</p><p><b><a href="/wiki/2022" class="mw-redirect" title="2022">2022</a> m. <a class="mw-selflink selflink">savaitės inciatyvos</a> dalyvių indėlis.</b>
+</p>
+<table width="100%" cellpadding="2" cellspacing="5" style="vertical-align:top; background-color:#d0f0c0; -moz-border-radius:10px">
+
+<tbody><tr>
+<td><b>Prisidėję naudotojai</b></td>
+<td><b>Naujai sukurti straipsniai</b></td>
+<td><b>Išplėsti arba sutvarkyti straipsniai</b></td>
+<td><b>Viso</b>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Viskonsas" title="Naudotojas:Viskonsas">Viskonsas</a></td>
+<td>32</td>
+<td>9</td>
+<td>41</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Hugo.arg" title="Naudotojas:Hugo.arg">Hugo.arg</a></td>
+<td>31</td>
+<td>1</td>
+<td>32</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Italas" title="Naudotojas:Italas">Italas</a></td>
+<td>5</td>
+<td>7</td>
+<td>12</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:CD" title="Naudotojas:CD">CD</a></td>
+<td>11</td>
+<td>0</td>
+<td>11</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Homo_ergaster" title="Naudotojas:Homo ergaster">Homo ergaster</a></td>
+<td>10</td>
+<td>0</td>
+<td>10</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Zykasaa" title="Naudotojas:Zykasaa">Zykasaa</a></td>
+<td>7</td>
+<td>2</td>
+<td>9</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Nomadbones" title="Naudotojas:Nomadbones">Nomadbones</a></td>
+<td>8</td>
+<td>0</td>
+<td>8</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Kunigas_Michailas" title="Naudotojas:Kunigas Michailas">Kunigas Michailas</a></td>
+<td>3</td>
+<td>4</td>
+<td>7</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Makenzis" title="Naudotojas:Makenzis">Makenzis</a></td>
+<td>3</td>
+<td>3</td>
+<td>6</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/w/index.php?title=Naudotojas:Teach5&amp;action=edit&amp;redlink=1" class="new" title="Naudotojas:Teach5 (puslapis neegzistuoja)">Teach5</a></td>
+<td>4</td>
+<td>1</td>
+<td>5</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Bearas" title="Naudotojas:Bearas">Bearas</a></td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Vaidila" title="Naudotojas:Vaidila">Vaidila</a></td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Vilensija" title="Naudotojas:Vilensija">Vilensija</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/wiki/Naudotojas:Ed1974LT" title="Naudotojas:Ed1974LT">Ed1974LT</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>
+</td></tr>
+<tr>
+<td>VISO</td>
+<td>121</td>
+<td>28</td>
+<td>149</td>
+<td>
+</td></tr>
+</tbody></table>
+<ul><li><a href="/wiki/Naudotojas:Powermelon" title="Naudotojas:Powermelon">Powermelon</a> (<a href="/wiki/Naudotojo_aptarimas:Powermelon" title="Naudotojo aptarimas:Powermelon">aptarimas</a>) 08:37, 19 balandžio 2022 (EEST)<span class="ext-discussiontools-init-replylink-buttons"><span class="ext-discussiontools-init-replylink-bracket">[</span><a class="ext-discussiontools-init-replylink-reply" role="button" tabindex="0" data-mw-comment="{&quot;type&quot;:&quot;comment&quot;,&quot;level&quot;:1,&quot;id&quot;:&quot;c-Powermelon-2022-04-19T05:37:00.000Z-Prisid\u0117j\u0119_naudotojai&quot;,&quot;replies&quot;:[],&quot;timestamp&quot;:&quot;2022-04-19T05:37:00.000Z&quot;,&quot;author&quot;:&quot;Powermelon&quot;}" href="">atsakyti</a><span class="ext-discussiontools-init-replylink-bracket">]</span></span><span data-mw-comment-end="c-Powermelon-2022-04-19T05:37:00.000Z-Prisidėję_naudotojai"></span></li></ul>
+<h2><span id="Ankstesn.C4.97s_iniciatyvos"></span><span class="mw-headline" id="Ankstesnės_iniciatyvos" data-mw-comment="{&quot;type&quot;:&quot;heading&quot;,&quot;level&quot;:0,&quot;id&quot;:&quot;h-Ankstesn\u0117s_iniciatyvos&quot;,&quot;replies&quot;:[],&quot;headingLevel&quot;:2,&quot;placeholderHeading&quot;:false,&quot;name&quot;:&quot;h-&quot;}"><span data-mw-comment-start="" id="h-Ankstesnės_iniciatyvos"></span>Ankstesnės iniciatyvos<span data-mw-comment-end="h-Ankstesnės_iniciatyvos"></span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;action=edit&amp;section=5" title="Redaguoti skyrelį: Ankstesnės iniciatyvos">redaguoti vikitekstą</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Vikipedija:Savait%C4%97s_iniciatyva/Ankstesn%C4%97s_2022" title="Vikipedija:Savaitės iniciatyva/Ankstesnės 2022">2022 metų ankstesnių iniciatyvų sąrašas ir jų rezultatai</a></li>
+<li><a href="/wiki/Vikipedija:Savait%C4%97s_iniciatyvos_pasi%C5%ABlymai/Ankstesnis_grafikas" title="Vikipedija:Savaitės iniciatyvos pasiūlymai/Ankstesnis grafikas">Visų ankstesnių savaitės iniciatyvų sąrašas nuo 2005 m.</a></li></ul>
+<h2><span class="mw-headline" id="Dokumentacija" data-mw-comment="{&quot;type&quot;:&quot;heading&quot;,&quot;level&quot;:0,&quot;id&quot;:&quot;h-Dokumentacija&quot;,&quot;replies&quot;:[],&quot;headingLevel&quot;:2,&quot;placeholderHeading&quot;:false,&quot;name&quot;:&quot;h-&quot;}"><span data-mw-comment-start="" id="h-Dokumentacija"></span>Dokumentacija<span data-mw-comment-end="h-Dokumentacija"></span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;action=edit&amp;section=6" title="Redaguoti skyrelį: Dokumentacija">redaguoti vikitekstą</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Savaitės iniciatyvos taisyklės bei priežiūra plačiau aprašyti straipsnyje <a href="/wiki/Vikipedija:Savait%C4%97s_iniciatyva/Dokumentacija" title="Vikipedija:Savaitės iniciatyva/Dokumentacija">Vikipedija:Savaitės iniciatyva/Dokumentacija</a>.
+</p>
+<!-- 
+NewPP limit report
+Parsed by mw1367
+Cached time: 20220420060928
+Cache expiry: 86400
+Reduced expiry: true
+Complications: []
+DiscussionTools time usage: 0.017 seconds
+CPU time usage: 0.069 seconds
+Real time usage: 0.107 seconds
+Preprocessor visited node count: 44/1000000
+Post‐expand include size: 2229/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/100
+Expensive parser function count: 0/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   15.036      1 -total
+ 40.24%    6.050      1 Šablonas:Trūkstami
+ 32.06%    4.821      1 Vikipedija:Savaitės_iniciatyva/Naudotojai-2022
+ 23.01%    3.460      1 Vikipedija:Savaitės_iniciatyva/Tema
+-->
+
+<!-- Saved in parser cache with key ltwiki:pcache:idhash:14146-0!canonical and timestamp 20220420060928 and revision id 6560464. Serialized with JSON.
+ -->
+</div><noscript><img src="//lt.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Rodomas puslapis "<a dir="ltr" href="https://lt.wikipedia.org/w/index.php?title=Vikipedija:Savaitės_iniciatyva&amp;oldid=6560464">https://lt.wikipedia.org/w/index.php?title=Vikipedija:Savaitės_iniciatyva&amp;oldid=6560464</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Specialus:Kategorijos" title="Specialus:Kategorijos">Kategorijos</a>: <ul><li><a href="/wiki/Kategorija:Savait%C4%97s_iniciatyv%C5%B3_dalyviai" title="Kategorija:Savaitės iniciatyvų dalyviai">Savaitės iniciatyvų dalyviai</a></li><li><a href="/wiki/Kategorija:Savait%C4%97s_iniciatyva" title="Kategorija:Savaitės iniciatyva">Savaitės iniciatyva</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Naršymo meniu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<label id="p-personal-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Asmeniniai įrankiai</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span title="Naudotojo puslapis jūsų IP adresui">Neprisijungęs</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Specialus:Mano_aptarimas" title="Pakeitimų aptarimas, darytus naudojant šį IP adresą [n]" accesskey="n"><span>Šio IP aptarimų puslapis</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Specialus:Mano_ind%C4%97lis" title="Keitimų sąrašas, padarytų iš šio IP adreso [y]" accesskey="y"><span>Indėlis</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Specialus:Sukurti_paskyr%C4%85&amp;returnto=Vikipedija%3ASavait%C4%97s+iniciatyva" title="Skatiname susikurti paskyrą ir prisijungti, tačiau, tai nėra privaloma"><span>Sukurti paskyrą</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Specialus:Prisijungimas&amp;returnto=Vikipedija%3ASavait%C4%97s+iniciatyva" title="Rekomenduojame prisijungti, nors tai nėra privaloma [o]" accesskey="o"><span>Prisijungti</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<label id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Vardų sritys</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-project" class="selected mw-list-item"><a href="/wiki/Vikipedija:Savait%C4%97s_iniciatyva" title="Rodyti projekto puslapį [a]" accesskey="a"><span>Projektas</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Vikipedijos_aptarimas:Savait%C4%97s_iniciatyva" rel="discussion" title="Puslapio turinio aptarimas [t]" accesskey="t"><span>Aptarimas</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<label id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">lietuvių</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<label id="p-views-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Žiūrėti</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Vikipedija:Savait%C4%97s_iniciatyva"><span>Skaityti</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;action=edit" title="Redaguoti šį puslapį [e]" accesskey="e"><span>Keisti vikitekstą</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;action=history" title="Ankstesnės puslapio versijos [h]" accesskey="h"><span>Istorija</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<label id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Daugiau</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Paieška</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Ieškoti Vikipedijoje" aria-label="Ieškoti Vikipedijoje" autocapitalize="sentences" title="Ieškoti lietuviškame wiki [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Specialus:Paieška"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Ieškokite šio teksto puslapių" value="Paieška" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Eiti į puslapį su tokiu pavadinimu, jei toks yra" value="Rodyti" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Pagrindinis_puslapis"
+			title="Eiti į pradinį puslapį"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<label id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Naršymas</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage" class="mw-list-item"><a href="/wiki/Pagrindinis_puslapis" title="Eiti į pradinį puslapį [z]" accesskey="z"><span>Pagrindinis puslapis</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Vikipedija:Bendruomen%C4%97" title="Apie projektą, ką galima daryti, kur ką rasti"><span>Bendruomenės portalas</span></a></li><li id="n-forumas" class="mw-list-item"><a href="/wiki/Vikipedija:Forumas"><span>Forumas</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Specialus:Naujausi_keitimai" icon="recentChanges" title="Paskutinių keitimų sąrašas viki projekte [r]" accesskey="r"><span>Naujausi keitimai</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Specialus:Atsitiktinis_puslapis" icon="die" title="Įkelti atsitiktinį puslapį [x]" accesskey="x"><span>Atsitiktinis straipsnis</span></a></li><li id="n-pagalba" class="mw-list-item"><a href="/wiki/Pagalba:Turinys"><span>Pagalba</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_lt.wikipedia.org&amp;uselang=lt" title="Paremkite mus"><span>Parama</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<label id="p-tb-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Įrankiai</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Specialus:Kas_%C4%AF_%C4%8Dia_rodo/Vikipedija:Savait%C4%97s_iniciatyva" title="Viki puslapių sąrašas, kuris nurodo čia [j]" accesskey="j"><span>Susiję straipsniai</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Specialus:Pakeitimai_susijusiuose_puslapiuose/Vikipedija:Savait%C4%97s_iniciatyva" rel="nofollow" title="Paskutiniai keitimai puslapiuose, pasiekiamuose iš šio puslapio [k]" accesskey="k"><span>Susiję keitimai</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Specialus:Specialieji_puslapiai" title="Specialiųjų puslapių sąrašas [q]" accesskey="q"><span>Specialieji puslapiai</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;oldid=6560464" title="Nuolatinė nuoroda į šią puslapio versiją"><span>Nuolatinė nuoroda</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;action=info" title="Daugiau žinių apie šį puslapį"><span>Puslapio informacija</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q3906662" title="Nuoroda į susietą duomenų saugyklos įrašą [g]" accesskey="g"><span>Vikiduomenys įrašas</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<label id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Spausdinti/eksportuoti</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-create_a_book" class="mw-list-item"><a href="/w/index.php?title=Specialus:Book&amp;bookcmd=book_creator&amp;referer=Vikipedija%3ASavait%C4%97s+iniciatyva"><span>Kurti knygą</span></a></li><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Specialus:DownloadAsPdf&amp;page=Vikipedija%3ASavait%C4%97s_iniciatyva&amp;action=show-download-screen"><span>Parsisiųsti kaip PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;printable=yes" title="Šio puslapio versija spausdinimui [p]" accesskey="p"><span>Versija spausdinimui</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<label id="p-lang-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Kitomis kalbomis</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-als mw-list-item"><a href="https://als.wikipedia.org/wiki/Wikipedia:Baustelle" title="Wikipedia:Baustelle – Alemannisch" lang="gsw" hreflang="gsw" class="interlanguage-link-target"><span>Alemannisch</span></a></li><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%B9%D8%A7%D9%88%D9%86_%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9" title="ويكيبيديا:تعاون الأسبوع – arabų" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-bar mw-list-item"><a href="https://bar.wikipedia.org/wiki/Wikipedia:Wartung" title="Wikipedia:Wartung – bavarų" lang="bar" hreflang="bar" class="interlanguage-link-target"><span>Boarisch</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%A3%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_%D0%B7%D0%B0_%D1%81%D1%8A%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE" title="Уикипедия:Проект за сътрудничество – bulgarų" lang="bg" hreflang="bg" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Viquip%C3%A8dia:Contribuci%C3%B3_de_la_quinzena" title="Viquipèdia:Contribució de la quinzena – katalonų" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-ckb mw-list-item"><a href="https://ckb.wikipedia.org/wiki/%D9%88%DB%8C%DA%A9%DB%8C%D9%BE%DB%8C%D8%AF%DB%8C%D8%A7:%D8%AD%DB%95%D9%88%D8%AA%DB%95%DB%8C_%D9%88%DB%8C%DA%A9%DB%8C" title="ویکیپیدیا:حەوتەی ویکی – soranių kurdų" lang="ckb" hreflang="ckb" class="interlanguage-link-target"><span>کوردی</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Wikipedia:Wartung" title="Wikipedia:Wartung – vokiečių" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a href="https://en.wikipedia.org/wiki/Wikipedia:Articles_for_improvement" title="Wikipedia:Articles for improvement – anglų" lang="en" hreflang="en" class="interlanguage-link-target"><span>English</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a href="https://eo.wikipedia.org/wiki/Vikipedio:Kunlabora%C4%B5o_de_la_semajno" title="Vikipedio:Kunlaboraĵo de la semajno – esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Wikipedia:Colaboraci%C3%B3n_de_la_semana" title="Wikipedia:Colaboración de la semana – ispanų" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D9%BE%D8%AF%DB%8C%D8%A7:%D9%87%D9%85%DA%A9%D8%A7%D8%B1%DB%8C_%D9%87%D9%81%D8%AA%D9%87" title="ویکی‌پدیا:همکاری هفته – persų" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Wikipedia:Viikon_yhteisty%C3%B6artikkelit" title="Wikipedia:Viikon yhteistyöartikkelit – suomių" lang="fi" hreflang="fi" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Article_de_la_semaine" title="Wikipédia:Article de la semaine – prancūzų" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94:%D7%94%D7%9E%D7%A7%D7%91%D7%A5_%D7%94%D7%A9%D7%91%D7%95%D7%A2%D7%99" title="ויקיפדיה:המקבץ השבועי – hebrajų" lang="he" hreflang="he" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hi mw-list-item"><a href="https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%87%E0%A4%B8_%E0%A4%B8%E0%A4%AA%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%B9_%E0%A4%95%E0%A4%BE_%E0%A4%B8%E0%A5%81%E0%A4%A7%E0%A4%BE%E0%A4%B0_%E0%A4%B9%E0%A5%87%E0%A4%A4%E0%A5%81_%E0%A4%B2%E0%A5%87%E0%A4%96" title="विकिपीडिया:इस सप्ताह का सुधार हेतु लेख – hindi" lang="hi" hreflang="hi" class="interlanguage-link-target"><span>हिन्दी</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Wikip%C3%A9dia:A_h%C3%B3nap_sz%C3%B3cikkeinek_m%C5%B1helye" title="Wikipédia:A hónap szócikkeinek műhelye – vengrų" lang="hu" hreflang="hu" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Wikipedia:Kolaborasi_minggu_ini" title="Wikipedia:Kolaborasi minggu ini – indoneziečių" lang="id" hreflang="id" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-is mw-list-item"><a href="https://is.wikipedia.org/wiki/Wikipedia:Samvinna_m%C3%A1na%C3%B0arins" title="Wikipedia:Samvinna mánaðarins – islandų" lang="is" hreflang="is" class="interlanguage-link-target"><span>Íslenska</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/Wikipedia:%E4%BB%8A%E9%80%B1%E3%81%AE%E5%BC%B7%E5%8C%96%E8%A8%98%E4%BA%8B" title="Wikipedia:今週の強化記事 – japonų" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-kk mw-list-item"><a href="https://kk.wikipedia.org/wiki/%D0%96%D0%BE%D0%B1%D0%B0:%D0%90%D0%BF%D1%82%D0%B0%D0%BD%D1%8B%D2%A3_%D0%B6%D2%B1%D0%BC%D1%8B%D1%81%D1%8B" title="Жоба:Аптаның жұмысы – kazachų" lang="kk" hreflang="kk" class="interlanguage-link-target"><span>Қазақша</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8:%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC_%ED%86%A0%EB%A7%89%EA%B8%80/%EC%9D%B4_%EC%A3%BC%EC%9D%98_%ED%86%A0%EB%A7%89%EA%B8%80_%EC%84%B1%EC%9E%A5" title="위키프로젝트:위키백과 토막글/이 주의 토막글 성장 – korėjiečių" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-la mw-list-item"><a href="https://la.wikipedia.org/wiki/Vicipaedia:Collaboratio_hebdomadalis" title="Vicipaedia:Collaboratio hebdomadalis – lotynų" lang="la" hreflang="la" class="interlanguage-link-target"><span>Latina</span></a></li><li class="interlanguage-link interwiki-lb mw-list-item"><a href="https://lb.wikipedia.org/wiki/Wikipedia:Artikel_vun_der_Woch" title="Wikipedia:Artikel vun der Woch – liuksemburgiečių" lang="lb" hreflang="lb" class="interlanguage-link-target"><span>Lëtzebuergesch</span></a></li><li class="interlanguage-link interwiki-ms mw-list-item"><a href="https://ms.wikipedia.org/wiki/Wikipedia:Rencana_gotong-royong" title="Wikipedia:Rencana gotong-royong – malajiečių" lang="ms" hreflang="ms" class="interlanguage-link-target"><span>Bahasa Melayu</span></a></li><li class="interlanguage-link interwiki-ne mw-list-item"><a href="https://ne.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A4%BF%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B8%E0%A5%81%E0%A4%A7%E0%A4%BE%E0%A4%B0%E0%A4%95%E0%A5%8B_%E0%A4%B2%E0%A4%BE%E0%A4%97%E0%A4%BF_%E0%A4%86%E0%A4%9C%E0%A4%95%E0%A4%BE_%E0%A4%B2%E0%A5%87%E0%A4%96%E0%A4%B9%E0%A4%B0%E0%A5%82" title="विकिपिडिया:सुधारको लागि आजका लेखहरू – nepaliečių" lang="ne" hreflang="ne" class="interlanguage-link-target"><span>नेपाली</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Wikipedia:Wikiproject/Kwaliteitsverbetering" title="Wikipedia:Wikiproject/Kwaliteitsverbetering – olandų" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Wikipedia:Kvalitetsoffensiv" title="Wikipedia:Kvalitetsoffensiv – norvegų bukmolas" lang="nb" hreflang="nb" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-oc mw-list-item"><a href="https://oc.wikipedia.org/wiki/Wikip%C3%A8dia:Article_de_la_setmana" title="Wikipèdia:Article de la setmana – očitarų" lang="oc" hreflang="oc" class="interlanguage-link-target"><span>Occitan</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Wikipedia:Zal%C4%85%C5%BCek_miesi%C4%85ca" title="Wikipedia:Zalążek miesiąca – lenkų" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a href="https://ro.wikipedia.org/wiki/Wikipedia:Proiectul_s%C4%83pt%C4%83m%C3%A2nii" title="Wikipedia:Proiectul săptămânii – rumunų" lang="ro" hreflang="ro" class="interlanguage-link-target"><span>Română</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9A%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82%D1%8B_%D0%BD%D0%B0_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83_%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8" title="Википедия:Кандидаты на работу недели – rusų" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sd mw-list-item"><a href="https://sd.wikipedia.org/wiki/%D9%88%DA%AA%D9%8A%D9%BE%D9%8A%DA%8A%D9%8A%D8%A7:%D8%B3%DA%8C%D8%A7%D8%B1%D9%88_%D9%84%D8%A7%D8%A1%D9%90_%D8%A7%DA%84_%D8%AC%D9%88_%D9%85%D8%B6%D9%85%D9%88%D9%86" title="وڪيپيڊيا:سڌارو لاءِ اڄ جو مضمون – sindų" lang="sd" hreflang="sd" class="interlanguage-link-target"><span>سنڌي</span></a></li><li class="interlanguage-link interwiki-se mw-list-item"><a href="https://se.wikipedia.org/wiki/Wikipedia:Bargokantuvra" title="Wikipedia:Bargokantuvra – šiaurės samių" lang="se" hreflang="se" class="interlanguage-link-target"><span>Davvisámegiella</span></a></li><li class="interlanguage-link interwiki-sh mw-list-item"><a href="https://sh.wikipedia.org/wiki/Wikipedia:Sre%C4%91ivanje_%C4%8Dlanaka" title="Wikipedia:Sređivanje članaka – serbų-kroatų" lang="sh" hreflang="sh" class="interlanguage-link-target"><span>Srpskohrvatski / српскохрватски</span></a></li><li class="interlanguage-link interwiki-sq mw-list-item"><a href="https://sq.wikipedia.org/wiki/Wikipedia:Bashk%C3%ABpunimi_i_jav%C3%ABs" title="Wikipedia:Bashkëpunimi i javës – albanų" lang="sq" hreflang="sq" class="interlanguage-link-target"><span>Shqip</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%98%D0%B0:%D0%A1%D1%80%D0%B5%D1%92%D0%B8%D0%B2%D0%B0%D1%9A%D0%B5_%D0%BD%D0%B5%D0%B4%D0%B5%D1%99%D0%B5" title="Википедија:Сређивање недеље – serbų" lang="sr" hreflang="sr" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Wikipedia:Veckans_samarbete" title="Wikipedia:Veckans samarbete – švedų" lang="sv" hreflang="sv" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%BA%D1%96%D0%BF%D0%B5%D0%B4%D1%96%D1%8F:%D0%A1%D0%BF%D1%96%D0%B2%D0%BF%D1%80%D0%B0%D1%86%D1%8F_%D1%82%D0%B8%D0%B6%D0%BD%D1%8F" title="Вікіпедія:Співпраця тижня – ukrainiečių" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Wikipedia:B%C3%A0i_%C6%B0u_ti%C3%AAn_n%C3%A2ng_c%E1%BA%A5p_trong_tu%E1%BA%A7n" title="Wikipedia:Bài ưu tiên nâng cấp trong tuần – vietnamiečių" lang="vi" hreflang="vi" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-yi mw-list-item"><a href="https://yi.wikipedia.org/wiki/%D7%B0%D7%99%D7%A7%D7%99%D7%A4%D6%BC%D7%A2%D7%93%D7%99%D7%A2:%D7%A7%D7%95%D7%95%D7%90%D7%9C%D7%99%D7%98%D7%A2%D7%98_%D7%90%D7%98%D7%90%D7%A7%D7%A2" title="װיקיפּעדיע:קוואליטעט אטאקע – jidiš" lang="yi" hreflang="yi" class="interlanguage-link-target"><span>ייִדיש</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/Wikipedia:%E6%9D%A1%E7%9B%AE%E8%B4%A8%E9%87%8F%E6%8F%90%E5%8D%87%E8%AE%A1%E5%88%92" title="Wikipedia:条目质量提升计划 – kinų" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/Wikipedia:%E4%BB%8A%E5%80%8B%E7%A6%AE%E6%8B%9C%E5%A4%A7%E6%90%9E%E4%BD%9C" title="Wikipedia:今個禮拜大搞作 – Cantonese" lang="yue" hreflang="yue" class="interlanguage-link-target"><span>粵語</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q3906662#sitelinks-wikipedia" title="Keisti tarpkalbines nuorodas" class="wbc-editpage">Keisti nuorodas</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> Šis puslapis paskutinį kartą keistas 19 balandžio 2022 08:34.</li>
+	<li id="footer-info-copyright">Tekstas pateikiamas pagal <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution/Share-Alike Licenciją</a>;
+gali būti taikomos papildomos sąlygos.
+Detaliau – <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> .</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privatumo politika</a></li>
+	<li id="footer-places-about"><a href="/wiki/Vikipedija:Apie" class="mw-redirect" title="Vikipedija:Apie">Apie Vikipediją</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Vikipedija:General_disclaimer" class="mw-redirect" title="Vikipedija:General disclaimer">Jokių garantijų</a></li>
+	<li id="footer-places-mobileview"><a href="//lt.m.wikipedia.org/w/index.php?title=Vikipedija:Savait%C4%97s_iniciatyva&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobili peržiūra</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Kūrėjai</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/lt.wikipedia.org">Statistika</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Slapukų politika</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"discussiontools":{"limitreport-timeusage":"0.017"},"limitreport":{"cputime":"0.069","walltime":"0.107","ppvisitednodes":{"value":44,"limit":1000000},"postexpandincludesize":{"value":2229,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":4,"limit":100},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   15.036      1 -total"," 40.24%    6.050      1 Šablonas:Trūkstami"," 32.06%    4.821      1 Vikipedija:Savaitės_iniciatyva/Naudotojai-2022"," 23.01%    3.460      1 Vikipedija:Savaitės_iniciatyva/Tema"]},"cachereport":{"origin":"mw1367","timestamp":"20220420060928","ttl":86400,"transientcontent":true}}});mw.config.set({"wgBackendResponseTime":131,"wgHostname":"mw1435"});});</script>
+</body>
+</html>
