@@ -6,3 +6,6 @@ lazy val root = (project in file("."))
   .settings(
     name := "KristinaScalaPlayground2022"
   )
+
+// https://mvnrepository.com/artifact/com.lihaoyi/upickle
+libraryDependencies += "com.lihaoyi" %% "upickle" % "1.6.0"
