@@ -9,7 +9,9 @@ VALUES ('Kristina Kudriašova');
 
 --CREATE album
 INSERT INTO albums (Title, ArtistId)
-VALUES ('Kristina''s Solo Album', 276);
+--VALUES ('Kristina''s Solo Album', 276);
+VALUES ('Kristina''s Solo Album',
+SELECT ArtistId FROM artists WHERE artists.Name = 'Kristina Kudriašova');
 
 --CREATE 2 tracks from that album that use your own genre of music
 INSERT INTO tracks
@@ -22,7 +24,8 @@ VALUES
 
 --UPDATE one of the tracks to be opera genre
 UPDATE tracks 
-SET GenreId = 25
+--SET GenreId = 25
+SET GenreId = (SELECT GenreId FROM genres WHERE Name = 'Opera')
 WHERE Name = 'My awesome tune';
 
 SELECT * FROM tracks t 
