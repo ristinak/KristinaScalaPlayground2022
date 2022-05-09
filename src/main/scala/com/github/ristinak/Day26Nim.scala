@@ -1,5 +1,6 @@
 package com.github.ristinak
 
+import scala.collection.mutable.ArrayBuffer
 import scala.io.StdIn.readLine
 
 //TODO exercise
@@ -25,6 +26,7 @@ class Nim(
            var isPlayerATurn:Boolean = true) {
 
   var currentState:Int = startingCount
+  var movesArray: ArrayBuffer[Int] = ArrayBuffer()
 
   def removeMatches(safeMove:Int):Int = {
     currentState - safeMove
@@ -93,6 +95,7 @@ object Day26Nim extends App {
     val move = readLine(s"How many matches do you want to take $currentPlayer? (1-3) ").toInt //TODO error checking
     val safeMove = clampMove(move, nimGame.minMove, nimGame.maxMove)
     nimGame.currentState = nimGame.removeMatches(safeMove)
+    nimGame.movesArray.append(safeMove)
     nimGame.isPlayerATurn = !nimGame.isPlayerATurn //toggle trick to change a boolean to reverse version of present
     val nextPlayer = if (nimGame.isPlayerATurn) playerA else playerB
     nimGame.showStatus(nimGame.currentState, nextPlayer)
@@ -107,6 +110,7 @@ object Day26Nim extends App {
   println(s"Game ended. Congratulations $winner! Better luck next time $loser.")
   //print game status again
   nimGame.showStatus(nimGame.currentState, winner)
+  println(s"The sequence of moves performed: ${nimGame.movesArray.mkString(", ")}.")
   //TODO implement multiple games
 
 
