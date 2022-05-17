@@ -22,7 +22,13 @@ object  NimAI {
   def getSmartStrategy(currentState:Int):Int = {
     //some match case would work in combination with modulo/reminder operation
     //plus what should computer do when it has a losing position - one idea play randomly then
-    2 //FIXME figure out a smart strategy
+    val remainder: Int = currentState % 4
+    remainder match {
+      case 0 => 3
+      case 1 => 3 // that's a losing position, no good option
+      case 2 => 1
+      case 3 => 2
+    }
   }
 }
 
