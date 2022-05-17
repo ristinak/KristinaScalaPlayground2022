@@ -15,7 +15,7 @@ object Day26Nim extends App {
 
   //TODO move saving date into database
   //TODO add more computer opponents
-  //TODO allow more than one game at once
+
   val saveDst = "src/resources/nim/scores.csv"
   val db = new NimDB("src/resources/nim/nim.db")
   val startingCount = 21
@@ -23,18 +23,22 @@ object Day26Nim extends App {
   val minMove = 1
   val maxMove = 3
 
+  var players = getPlayerNames()
+  var playerA = players._1
+  var playerB = players._2
+  var computerLevel = players._3
 
+  def getPlayerNames(): (String, String, Int) = {
+    val playerA = readLine("Player A what is your name?")
+    var playerB = readLine("Player B what is your name? (press ENTER for computer) ")
+    if (playerB == "") playerB = "COMPUTER" //TODO see if you can do the previous 2 lines at once
 
-  val playerA = readLine("Player A what is your name?")
-  var playerB = readLine("Player B what is your name? (press ENTER for computer) ")
-  if (playerB == "") playerB = "COMPUTER" //TODO see if you can do the previous 2 lines at once
-
-  //TODO more computer levels
-  var computerLevel = 0
-  if (playerB == "COMPUTER") {
-    computerLevel = getIntegerInput("Please enter computer level (1-3)")
+    var computerLevel = 0
+    if (playerB == "COMPUTER") {
+      computerLevel = getIntegerInput("Please enter computer level (1-3)")
+    }
+    (playerA, playerB, computerLevel)
   }
-
 
   //so this function is only inside the outer loop
   def getIntegerInput(prompt:String="Please enter an integer: "): Int = {
@@ -94,9 +98,19 @@ object Day26Nim extends App {
 
     db.printAllPlayers()
 
-    val nextGameInput = readLine("Do you want to play another game with same players ? (Y/N)")
-    if (nextGameInput.toLowerCase.startsWith("y")) isNewGameNeeded = true
-    else isNewGameNeeded = false
+    val nextGameInput = readLine("Do you want to play another game? (Y/N) ")
+    if (nextGameInput.toLowerCase.startsWith("y")) {
+      val samePlayers = readLine("Do you want to continue with same players? (Y/N) ")
+      if (samePlayers.toLowerCase.startsWith("y")) {
+        isNewGameNeeded = true
+      } else {
+        isNewGameNeeded = true
+        players = getPlayerNames()
+        playerA = players._1
+        playerB = players._2
+        computerLevel = players._3
+      }
+    } else isNewGameNeeded = false
 
     //TODO add support for new player names
     //TODO add changing of computer level if playerb is computer
