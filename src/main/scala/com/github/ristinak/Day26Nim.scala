@@ -1,4 +1,5 @@
 package com.github.ristinak
+
 import java.io.FileNotFoundException
 import java.nio.file.{Files, Paths}
 import java.text.SimpleDateFormat
@@ -12,7 +13,7 @@ object Day26Nim extends App {
   //implement basic version of https://en.wikipedia.org/wiki/Nim
   //https://en.wikipedia.org/wiki/Nim#The_21_game
 
-  //TODO move saveing date into database
+  //TODO move saving date into database
   //TODO add more computer opponents
   //TODO allow more than one game at once
   val saveDst = "src/resources/nim/scores.csv"
@@ -22,33 +23,26 @@ object Day26Nim extends App {
   val minMove = 1
   val maxMove = 3
 
+
+
   val playerA = readLine("Player A what is your name?")
   var playerB = readLine("Player B what is your name? (press ENTER for computer) ")
-  if (playerB == "") playerB = "COMPUTER" //TODO see if you can do the previos 2 lines at once
+  if (playerB == "") playerB = "COMPUTER" //TODO see if you can do the previous 2 lines at once
+
+  //TODO more computer levels
+  var computerLevel = 0
+  if (playerB == "COMPUTER") {
+    computerLevel = getIntegerInput("Please enter computer level (1-3)")
+  }
 
 
-  println(s"Player A -  $playerA and Player B - $playerB let us play NIM!")
-
-  //inevitably in most applications we will have some state that we want to keep track of
-  //here it is simple enough state that we can use a few variables
-  //at some point we will want to structure this game/app state into a separate object based on some class
-  //  var currentState = startingCount
-  val isPlayerAStarting = true //so A goes first
-
-  //TODO create a new object holding all the information necessary for a game nim from this class Nim
-  val nimGame = new Nim(playerA, playerB, startingCount, gameEndCondition, minMove, maxMove, isPlayerAStarting)
-
-  def getComputerMove(): Int = 2 //TODO add more complex logic later
-  //computer can be made to play perfectly
-  //or we could add some randomness
-
-  def getHumanMove(): Int = {
-    //TODO move this to method
+  //so this function is only inside the outer loop
+  def getIntegerInput(prompt:String="Please enter an integer: "): Int = {
     var needsInteger = true //we use this as a flag for our code
     var myInteger = 0
     //so we keep going until we get an input which we can cast to integer
     while (needsInteger) {
-      val moveInput = readLine(s"How many matches do you want to take ${nimGame.currentPlayer}? (1-3) ")
+      val moveInput = readLine(prompt)
       //https://alvinalexander.com/scala/scala-try-catch-finally-syntax-examples-exceptions-wildcard/
       try {
         myInteger = moveInput.toInt //this type Casting will throw an exception on bad input
@@ -63,41 +57,54 @@ object Day26Nim extends App {
     myInteger
   }
 
-  //main loop - while there are some matches play on
-  //TODO implement PvP - player versus player - computer only checks the rules
-  while (nimGame.isGameActive) {
-    //show the game state
-    //    println(s"Currently there are $currentState matches on the table")
-    nimGame.showStatus()
+  var isNewGameNeeded = true
+  while(isNewGameNeeded) {
+    println(s"Player A -  $playerA and Player B - $playerB let us play NIM!")
 
-    val move = if (nimGame.isCurrentPlayerComputer) {
-      getComputerMove()
-    } else {
-      getHumanMove()
+    val isPlayerAStarting = true //so A goes first
+
+    val nimGame = new Nim(playerA, playerB, startingCount, gameEndCondition, minMove, maxMove, isPlayerAStarting)
+
+
+
+    //main loop - while there are some matches play on
+    while (nimGame.isGameActive) {
+      //show the game state
+      //    println(s"Currently there are $currentState matches on the table")
+      nimGame.showStatus()
+
+      val move = if (nimGame.isCurrentPlayerComputer) {
+        NimAI.getComputerMove(nimGame.currentState, computerLevel)
+      } else {
+        getIntegerInput(s"${nimGame.currentPlayer} please enter how many matches you are taking (1-3)")
+      }
+      nimGame.removeMatches(move)
+      nimGame.nextPlayer()
     }
-    nimGame.removeMatches(move)
-    nimGame.nextPlayer()
+
+    nimGame.showStatus()
+    nimGame.printMoves()
+
+    nimGame.saveGameResult(saveDst)
+    db.insertResult(nimGame.getWinner, nimGame.getLoser)
+    nimGame.saveGameScore()
+    db.insertFullScore(nimGame.getMoves)
+    db.printTopPlayers()
+    db.printBiggestLosers()
+
+    db.printAllPlayers()
+
+    val nextGameInput = readLine("Do you want to play another game with same players ? (Y/N)")
+    if (nextGameInput.toLowerCase.startsWith("y")) isNewGameNeeded = true
+    else isNewGameNeeded = false
+
+    //TODO add support for new player names
+    //TODO add changing of computer level if playerb is computer
+
+
   }
-  //TODO PvC - player versus computer you will need to add some logic to the computer, add more levels
 
-  //end cleanup here we just print some game state and congratulations
+  println("Thank you for playing! Hoping to see you again ;)")
 
-
-  //  val winner = if (isPlayerATurn) playerA else playerB
-  //  val loser = if (!isPlayerATurn) playerA else playerB
-  //  println(s"Game ended. Congratulations $winner! Better luck next time $loser.")
-  nimGame.showStatus()
-  nimGame.printMoves()
-
-  //  Day27Persistence.saveGameResult(saveDst, nimGame.getWinner(), nimGame.getLoser())
-  nimGame.saveGameResult(saveDst)
-  db.insertResult(nimGame.getWinner, nimGame.getLoser)
-  nimGame.saveGameScore()
-  db.insertFullScore(nimGame.getMoves)
-  db.printTopPlayers()
-  db.printBottomPlayers()
-  db.printAllPlayers()
-  //print game status again
-  //TODO implement multiple games
 
 }

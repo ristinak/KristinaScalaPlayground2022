@@ -166,7 +166,7 @@ class NimDB(val dbPath: String) {
     val preparedStmt: PreparedStatement = conn.prepareStatement(insertSql)
 
     preparedStmt.setInt(1, game_id)
-    preparedStmt.setInt(2, turn+1)
+    preparedStmt.setInt(2, turn)
     preparedStmt.setInt(3, moves)
 
     preparedStmt.execute
@@ -284,6 +284,8 @@ class NimDB(val dbPath: String) {
     topPlayers.foreach(println)
   }
 
+  //TODO
+  //def getTopLosers() just like get TopWinners also return Array[Player] sorted by most losses
   def getTopLosers():Array[Player] = {
     val sql =
       """
@@ -302,31 +304,56 @@ class NimDB(val dbPath: String) {
       val player = Player(rs.getString("name"), losses = rs.getInt("losses"))
       playerBuffer += player
     }
-    playerBuffer.toArray
+    playerBuffer.toArray //better/safer to return immutable values
   }
 
-    def printBottomPlayers():Unit = {
-      println("Bottom Players with most losses are:")
-      val bottomPlayers = getTopLosers
-      bottomPlayers.foreach(println)
-    }
+  def printBiggestLosers():Unit = {
+    //it is surely tempting to use one function for both losers and winners
+    println("Players with the most losses are:")
+    val topLosers = getTopLosers()
+    topLosers.foreach(println)
+  }
 
-
-//    def getFullPlayerInfo:Array[Player]  = {
-//      val playerBuffer = ArrayBuffer[Player]()
-//      val winnerArray = getTopWinners()
-//      val loserArray = getTopLosers()
-//      winnerArray ++ loserArray
-//    }
-
-//  def printAllPlayers():Unit = {
-//    println("Players are:")
-//    val allPlayers = getFullPlayerInfo
-//    allPlayers.foreach(println)
-//  }
+  //  def getFullPlayerInfo:Array[Player]  = {
+  //    //TODO
+  //  }
   //return Array[Player] with all fields filled out, meaning name, id, wins, losses
   //You can use getTopWinners and getTopLosers and also getuserId
   //you can also skip using getUserId and perhaps add id inside getTopWinners or getTopLosers
   //also it is possible to write just a single SQL query but that is not required
   //again so simplest will be to merge TopWinners Array and TopLosers array
+
+  def getFullPlayerInfo():Array[Player] = {
+    val winners = getTopWinners()
+    val losers = getTopLosers()
+    //for efficiency we create two maps of name to actual Player
+    //using Maps we avoid searching array of players for a specific name each time
+    //much faster on a larger collection
+    //here it does not really make a difference but it would on a larger data collection
+    //it is very similar idea behind SQL indexing by some column
+    val winnerMap = winners.map(winner => (winner.name, winner)).toMap
+    val loserMap = losers.map(loser => (loser.name, loser)).toMap //so we have instant access by player name
+
+    val playerBuffer = ArrayBuffer[Player]()
+    for (winner <- winners) {
+      //if we did not have map then our contains would need a loop to look up in the Array
+      val losses = if (loserMap.contains(winner.name)) loserMap(winner.name).losses else 0
+      val id = getUserId(winner.name)
+      playerBuffer += Player(winner.name, id, winner.wins, losses)
+    }
+    for (loser <- losers) {
+      if (!winnerMap.contains(loser.name)) {
+        val id = getUserId(loser.name)
+        playerBuffer += Player(loser.name, id, 0, loser.losses)
+      }
+    }
+    playerBuffer.toArray
+  }
+
+  def printAllPlayers():Unit = {
+    println("Full Player info")
+    val allPlayers = getFullPlayerInfo()
+
+    allPlayers.foreach(player => println(player.getPrettyString))
+  }
 }
