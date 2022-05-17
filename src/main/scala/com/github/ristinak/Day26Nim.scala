@@ -103,6 +103,12 @@ object Day26Nim extends App {
       val samePlayers = readLine("Do you want to continue with same players? (Y/N) ")
       if (samePlayers.toLowerCase.startsWith("y")) {
         isNewGameNeeded = true
+        if (playerB == "COMPUTER")  {
+          val changeComputerLevel = readLine("Do you want to change computer level? (Y/N) ")
+          if (changeComputerLevel.toLowerCase.startsWith("y")) {
+            computerLevel = getIntegerInput("Please enter computer level (1-3)")
+          }
+        }
       } else {
         isNewGameNeeded = true
         players = getPlayerNames()
@@ -112,7 +118,6 @@ object Day26Nim extends App {
       }
     } else isNewGameNeeded = false
 
-    //TODO add support for new player names
     //TODO add changing of computer level if playerb is computer
 
 
