@@ -65,11 +65,9 @@ object Day26Nim extends App {
   while(isNewGameNeeded) {
     println(s"Player A -  $playerA and Player B - $playerB let us play NIM!")
 
-    val isPlayerAStarting = true //so A goes first
+    val isPlayerAStarting = math.random <= 0.5 //the first player will always lose against a level 3 computer
 
     val nimGame = new Nim(playerA, playerB, startingCount, gameEndCondition, minMove, maxMove, isPlayerAStarting)
-
-
 
     //main loop - while there are some matches play on
     while (nimGame.isGameActive) {
