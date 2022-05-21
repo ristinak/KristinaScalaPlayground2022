@@ -5,8 +5,12 @@ import scala.collection.mutable.ArrayBuffer
 import scala.io.StdIn.readLine
 import scala.util.Random
 
+/** A game of Bulls and Cows
+ *  has methods for 3 different game modes
+ *  main method - play
+ * */
 class BullsAndCows {
-  // Which player's turn it is, playerA starts the game
+  // It is playerA's turn
   private var isPlayerATurn = true
   // Game state
   private var gameWon = false
@@ -16,17 +20,22 @@ class BullsAndCows {
   private var numberB = List[Int]()
 
   // Storing players' names for the game
-  private var playerA = ""
-  private var playerB = ""
+//  private var playerA = ""
+//  private var playerB = ""
+  var playerA = ""
+  var playerB = ""
 
-  // Creating database
+  val thankYou = "\n▀█▀ █░█ ▄▀█ █▄░█ █▄▀   █▄█ █▀█ █░█\n░█░ █▀█ █▀█ █░▀█ █░█   ░█░ █▄█ █▄█"
+  val startGame = "\n█▀ ▀█▀ ▄▀█ █▀█ ▀█▀   █▀▀ ▄▀█ █▀▄▀█ █▀▀\n▄█ ░█░ █▀█ █▀▄ ░█░   █▄█ █▀█ █░▀░█ ██▄"
+
+  // Creating the database
   val db = new BullsAndCowsDatabase("src/resources/db/game.db")
   db.migrate
 
   private var gameOption = 0
 
   // Array buffer for storing all guesses and their results
-  private var guessesArray: ArrayBuffer[(String, String)] = ArrayBuffer()
+  private val guessesArray: ArrayBuffer[(String, String)] = ArrayBuffer()
 
   /** True if playerB is COMPUTER. */
   private def isSecondPlayerAComputer: Boolean = playerB == "COMPUTER"
@@ -37,12 +46,10 @@ class BullsAndCows {
   /** Returns an array of guesses and their results. */
   private def getGuesses: Array[(String, String)] = guessesArray.toArray
 
-   /**
-   * msg - message to be displayed when asking for player input
-   * numOfDigits - the number of digits needed to be entered by a player
-   * Returns an integer of required length
+  /** Returns an integer of distinct digits of required length
+   *  @msg - message to be displayed when asking for player input
+   *  @numOfDigits - the number of digits needed to be entered by a player
    */
-  /** Gets an integer of required length and distinct digits from a player. */
   private def getInteger(msg: String, numOfDigits: Int): Int = {
     var needsInt = true
     var playerInt = 0
@@ -100,17 +107,19 @@ class BullsAndCows {
   }
 
   /** Gets playerA and playerB's names (or COMPUTER in mode 2)
-   *  Also prints a greeting
-   *
-   * mode - game mode: 1 (player vs player), 2 (player vs computer), 3 (2 players vs computer)
-   * Returns a tuple with player A and player B's names.
+   *  Inserts players' names in DB if they are new players
+   *  Prints a greeting
+   *  @mode - game mode: 1 (player vs player), 2 (player vs computer), 3 (2 players vs computer)
    */
-  /** Gets playerA and playerB's names (or COMPUTER). Prints a greeting. */
   private def Greetings(mode: Int): Unit = {
     mode match {
       case 2 | 3 =>
         playerA = readLine("Player A what is your name? ")
         playerB = readLine("Player B what is your name? ")
+        while (playerA==playerB)
+        {
+          playerB = readLine(s"Player B $playerB, your name is already taken, please, choose another nickname for your game: ")
+        }
       case 1 =>
         playerA = readLine("Player A what is your name? ")
         playerB = "COMPUTER"
@@ -123,7 +132,7 @@ class BullsAndCows {
   }
 
   /** Displays the menu with mode choices. */
-  private def Menu(): Unit = {
+  private def menu(): Unit = {
     println("*" * 10 + " Bulls & Cows " + "*" * 10)
     println("-" * 10 + "  Game Menu  " + "-" * 10)
     println("1. Single Player Mode")
@@ -131,8 +140,10 @@ class BullsAndCows {
     println("3. Player vs Player")
     println("4. Scoreboard")
     println("5. Rules")
+    println("6. Exit")
   }
 
+  /** Returns a list of 4 distinct digits not starting with 0. */
   private def randomizeNumber: List[Int] = {
     var number = List[Int]()
     while (number.size < 4) { // player vs computer
@@ -146,7 +157,10 @@ class BullsAndCows {
     number
   }
 
-  /** Returns the result of a guess in the form of XBXC string, to be added to the database. */
+  /** Returns the result of a guess in the form of XBXC string.
+   *  Adds guesses to the guessesArray.
+   *  If there is winner, adds game result to the database.
+   */
   private def BullsCowsCounter(correctAnswer: List[Int], guess: List[Int]): String = {
     var cows = 0
     var bulls = 0
@@ -169,7 +183,7 @@ class BullsAndCows {
         guessResult = "4B0C"
         db.insertResult(getCurrentPlayer, getOppositePlayer)
         guessesArray.append((guess.mkString, guessResult))
-        db.insertHistory(guessesArray)
+        db.insertHistory(getGuesses)
       }
       else {
         println( s"Bulls: $bulls Cows: $cows")
@@ -180,58 +194,70 @@ class BullsAndCows {
     guessResult
   }
 
+  /** Returns and prints an array of all guesses and their results. */
   def printGuesses(): Array[(String, String)] = {
     println("*" * 10 + " List of your guesses: " + "*" * 10)
-    for (((guess, result), index) <- guessesArray.zipWithIndex) {
+    for (((guess, result), index) <- getGuesses.zipWithIndex) {
       val playerName = {
         if (playerB == "COMPUTER") playerA
         else if (index % 2 == 0) playerA else playerB
       }
       println(s"Guess ${index + 1}. $playerName guessed $guess resulting in $result.")
     }
-    guessesArray.toArray
+    getGuesses
   }
 
-  private def PlayerVsPlayer: Unit = {
+  /** Mode 3: Player Vs Player
+   *  Both players enter their secret numbers.
+   *  They take turns guessing the opponent's number.
+   */
+  private def playerVsPlayer: Unit = {
     Greetings(3)
     getPlayerSecretNumber
+    println("\n" * 10 + thankYou + "\n" * 5)
     nextPlayer
     getPlayerSecretNumber
+    println("\n" * 10 + startGame + "\n" * 5)
     nextPlayer
 
     while (!gameWon) {
       if (isPlayerATurn) {
         val guess = getGuess(s"Player $getCurrentPlayer, your guess: ")
         BullsCowsCounter(numberB, guess)
-//        guessesArray += ((guess.mkString, guessResult))
         nextPlayer
       }
       else {
         val guess = getGuess(s"Player $getCurrentPlayer, your guess: ")
         BullsCowsCounter(numberA, guess)
-//        guessesArray += ((guess.mkString, guessResult))
         nextPlayer
       }
     }
   }
 
-  private def SinglePlayerVsComputer: Unit = {
+  /** Mode 1: Single Player Mode
+   *  Player guesses the secret numbers generated by the program.
+   */
+  private def singlePlayerVsComputer: Unit = {
     Greetings(1)
     nextPlayer
     getPlayerSecretNumber
+    println("\n" * 10 + startGame + "\n" * 5)
     nextPlayer
 
     while (!gameWon) {
       val guess = getGuess(s"Player $getCurrentPlayer, your guess: ")
       BullsCowsCounter(numberB, guess)
-//      guessesArray += ((guess.mkString, guessResult))
     }
   }
 
-  private def TwoPlayersVsComputer: Unit = {
+  /** Mode 2: Two Player Mode
+   *  Players take turns guessing the secret number generated by the program.
+   */
+  private def twoPlayersVsComputer: Unit = {
     Greetings(2)
     val computerSecretNumberList = randomizeNumber
-    println(s"The secret number is ${computerSecretNumberList.mkString}") //TODO delete later
+    println(s"The secret number is ${computerSecretNumberList.mkString}")
+    println("\n" * 10 + startGame + "\n" * 5)
     while (!gameWon) {
       val guess = getGuess(s"Player $getCurrentPlayer, your guess: ")
       BullsCowsCounter(computerSecretNumberList, guess)
@@ -239,14 +265,15 @@ class BullsAndCows {
       }
   }
 
-  /** Prints the scoreboard. */
+  /** Prints the scoreboard of top players. */
   private def scoreboard: Unit = {
     db.getScoreboard
     println("\n"*2)
-    Play
+    play
   }
 
-  private def Rules: Unit = {
+  /** Prints the rules of the game. */
+  private def rules: Unit = {
     println("\n"*2)
     println(
       "All 4 digits in the secret number are different.\n" +
@@ -260,22 +287,25 @@ class BullsAndCows {
       "and then take turns to guess the opponent's number\n" +
       "Good luck!\n"
     )
-    Play
+    play
   }
 
-  /** Displays game menu, asks to choose game mode, and launches that mode */
-  def Play: Unit = {
-    Menu
+  /** Displays game menu, asks to choose game mode, launches that mode.
+   * Returns gameOption number.
+   */
+  def play: Int = {
+    menu
     gameOption = getInteger("Choose game mode: ", 1)
 
     gameOption match {
-      case 1 => SinglePlayerVsComputer
-      case 2 => TwoPlayersVsComputer
-      case 3 => PlayerVsPlayer
+      case 1 => singlePlayerVsComputer
+      case 2 => twoPlayersVsComputer
+      case 3 => playerVsPlayer
       case 4 => scoreboard
-      case 5 => Rules
-      case _ => Play
+      case 5 => rules
+      case 6 => System.exit(0)
+      case _ => play
     }
-
+    gameOption
   }
 }

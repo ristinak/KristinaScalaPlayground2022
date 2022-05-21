@@ -1,13 +1,21 @@
 package com.github.ristinak
 
+import scala.io.StdIn.readLine
+
 object Bulls_and_Cows extends App {
-  val BullsAndCowsGame = new BullsAndCows
+  var isNewGameNeeded = true
 
-  BullsAndCowsGame.Play
-  BullsAndCowsGame.printGuesses
+  while (isNewGameNeeded) {
+    val BullsAndCowsGame = new BullsAndCows
+    BullsAndCowsGame.play
+    BullsAndCowsGame.printGuesses
+    val nextGameInput = readLine("Do you want to play another game? (Y/N) ")
+    if (!nextGameInput.toLowerCase.startsWith("y")) {
+      isNewGameNeeded = false
+    }
+  }
+  System.exit(0)
 
-//  val db = new BullsAndCowsDatabase("src/resources/db/bullsandcows.db")
-//  db.Migrate()
-//  db.insertPlayer("Marija")
-//  db.insertPlayer("Nikita")
+//  BullsAndCowsGame.db.dropAllTables()
+
 }

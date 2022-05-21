@@ -104,7 +104,9 @@ class  BullsAndCowsDatabase(val dbPath: String) {
          |SELECT MAX(id) id FROM $table;
          |""".stripMargin
     val resultSet = query.executeQuery(sql)
-    resultSet.getInt("id")
+    val lastId = resultSet.getInt("id")
+    query.close()
+    lastId
   }
 
     /**
@@ -113,7 +115,7 @@ class  BullsAndCowsDatabase(val dbPath: String) {
      * @param player - user  name
      * @return 0 or id
      */
-    def getPlayerId(player: String): Int = {
+  def getPlayerId(player: String): Int = {
       if (getPlayerCount(player) == 0) 0 else {
         val sql =
           """
@@ -151,26 +153,39 @@ class  BullsAndCowsDatabase(val dbPath: String) {
       println(result.getString("player") + ": " + result.getInt("wins"))
     }
     print("=" * 32)
+    query.close()
   }
 
-  // Function to insert a player into the database
-  def insertNewPlayer(player: String): Int = {
-    //if we have no player by this name only then we do anything
-    if (getPlayerCount(player) == 0) {
-      val sql =
-        """
-          |INSERT INTO players (player, created)
-          |VALUES (?, CURRENT_TIMESTAMP);
-          |""".stripMargin
+  def insertNewPlayer(player: String): Boolean = {
+    val lastId = getLastId("players")
+    var result = true
 
-      val preparedStmt: PreparedStatement = dbConnection.prepareStatement(sql)
+    val sql =
+      """
+        |INSERT INTO players (id, player, created)
+        |values (?,?,CURRENT_TIMESTAMP)
+        |""".stripMargin
 
-      preparedStmt.setString(1, player)
+    val query = dbConnection.prepareStatement(sql)
 
-      preparedStmt.execute //not checking for success
-      preparedStmt.close()
+    // Because id's in db is unique and can't be duplicated
+    // So with our function we get last used id in db and giving it +1
+    // So now it will be the new id, that does not exist
+    query.setInt(1, lastId+1)
+    query.setString(2, player)
+
+    // Catching an error, because our field name in db is unique
+    // So we need to catch an error if we insert duplicate name
+    try {
+      query.execute()
     }
-    getPlayerId(player)
+    catch {
+      case e:SQLiteException =>
+        //println("Duplicate name inserted")
+        result = false
+    }
+    query.close()
+    result
   }
 
   def insertResult(winner: String, loser: String): Unit = {
@@ -195,7 +210,7 @@ class  BullsAndCowsDatabase(val dbPath: String) {
     query.close()
   }
 
-  def insertHistory(gameTurns: ArrayBuffer[(String, String)]): Unit = {
+  def insertHistory(gameTurns: Array[(String, String)]): Unit = {
     val lastGameId = getLastId("results")
     val sql =
       """
