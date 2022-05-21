@@ -130,6 +130,7 @@ class BullsAndCows {
     println("2. Two Player Mode")
     println("3. Player vs Player")
     println("4. Scoreboard")
+    println("5. Rules")
   }
 
   private def randomizeNumber: List[Int] = {
@@ -245,6 +246,23 @@ class BullsAndCows {
     Play
   }
 
+  private def Rules: Unit = {
+    println("\n"*2)
+    println(
+      "All 4 digits in the secret number are different.\n" +
+      "The secret number cannot start with zero.\n" +
+      "The digits of the number guessed must also be different and cannot start with zero.\n" +
+      "If your guess has matching digits in their right positions, they are \"bulls\",\n" +
+      "if they are in different positions, they are \"cows.\"\n\n" +
+      "In Mode 1 (Single Player Mode), the player guesses a computer-generated secret number.\n" +
+      "In Mode 2 (Two Player Mode), players take turns to guess a computer-generated secret number.\n" +
+      "In Mode 3 (Player vs Player Mode), both players enter their secret numbers\n" +
+      "and then take turns to guess the opponent's number\n" +
+      "Good luck!\n"
+    )
+    Play
+  }
+
   /** Displays game menu, asks to choose game mode, and launches that mode */
   def Play: Unit = {
     Menu
@@ -255,6 +273,7 @@ class BullsAndCows {
       case 2 => TwoPlayersVsComputer
       case 3 => PlayerVsPlayer
       case 4 => scoreboard
+      case 5 => Rules
       case _ => Play
     }
 

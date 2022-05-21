@@ -150,7 +150,7 @@ class  BullsAndCowsDatabase(val dbPath: String) {
     while (result.next()) {
       println(result.getString("player") + ": " + result.getInt("wins"))
     }
-
+    print("=" * 32)
   }
 
   // Function to insert a player into the database
