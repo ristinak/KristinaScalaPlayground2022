@@ -19,6 +19,12 @@ class BullsAndCows {
   private var playerA = ""
   private var playerB = ""
 
+  // Creating database
+  val db = new BullsAndCowsDatabase("src/resources/db/game.db")
+  db.migrate
+
+  private var gameOption = 0
+
   // Array buffer for storing all guesses and their results
   private var guessesArray: ArrayBuffer[(String, String)] = ArrayBuffer()
 
@@ -32,9 +38,9 @@ class BullsAndCows {
   private def getGuesses: Array[(String, String)] = guessesArray.toArray
 
    /**
-   * @param msg - message to be displayed when asking for player input
-   * @param numOfDigits - the number of digits needed to be entered by a player
-   * @return - an integer of required length
+   * msg - message to be displayed when asking for player input
+   * numOfDigits - the number of digits needed to be entered by a player
+   * Returns an integer of required length
    */
   /** Gets an integer of required length and distinct digits from a player. */
   private def getInteger(msg: String, numOfDigits: Int): Int = {
@@ -43,11 +49,11 @@ class BullsAndCows {
     while (needsInt) {
       val input = readLine(msg).trim
       if (input.length != numOfDigits) {
-        println(s"Please enter a $numOfDigits-digit number: ")
+        println(s"The number needs $numOfDigits digits. ")
       } else if (!input.forall(Character.isDigit)) {
-        println("Please enter a number: ")
+        println("Please enter a number. ")
       } else if (input.distinct != input) {
-        println("All digits need to be unique: ")
+        println("All digits need to be unique. ")
       } else {
         playerInt = input.toInt
         needsInt = false
@@ -61,6 +67,9 @@ class BullsAndCows {
 
   /** Returns the current player. */
   private def getCurrentPlayer: String = if (isPlayerATurn) playerA else playerB
+
+  /** Returns the other player, not the one whose turn it is. */
+  private def getOppositePlayer: String = if (isPlayerATurn) playerB else playerA
 
   /** Returns a player's entry of distinct 4-digit guess in List[Int] form. */
   private def getGuess(msg: String): List[Int] = {
@@ -93,56 +102,44 @@ class BullsAndCows {
   /** Gets playerA and playerB's names (or COMPUTER in mode 2)
    *  Also prints a greeting
    *
-   * @param mode - game mode: 1 (player vs player), 2 (player vs computer), 3 (2 players vs computer)
-   * @return - a tuple with player A and player B's names.
+   * mode - game mode: 1 (player vs player), 2 (player vs computer), 3 (2 players vs computer)
+   * Returns a tuple with player A and player B's names.
    */
-  /** Gets playerA and playerB's names (or COMPUTER in mode 2). Prints a greeting. */
+  /** Gets playerA and playerB's names (or COMPUTER). Prints a greeting. */
   private def Greetings(mode: Int): Unit = {
     mode match {
-      case 1 | 3 => {
+      case 2 | 3 =>
         playerA = readLine("Player A what is your name? ")
         playerB = readLine("Player B what is your name? ")
-    }
-      case 2 => {
+      case 1 =>
         playerA = readLine("Player A what is your name? ")
         playerB = "COMPUTER"
-      }
-      //case 4 => displayRatings //TODO
     }
+    db.insertNewPlayer(playerA)
+    db.insertNewPlayer(playerB)
 
     println("\nGame begins!")
     println(s"$playerA VS $playerB\n")
   }
 
   /** Displays the menu with mode choices. */
-  private def Menu: Unit = {
+  private def Menu(): Unit = {
     println("*" * 10 + " Bulls & Cows " + "*" * 10)
     println("-" * 10 + "  Game Menu  " + "-" * 10)
     println("1. Single Player Mode")
     println("2. Two Player Mode")
     println("3. Player vs Player")
+    println("4. Scoreboard")
   }
-
-//  private def checkNumber(number: List[Int]): Boolean = {
-//    val string = number.mkString
-//    if (number(0) == 0) {
-//      false
-//    }
-//    else if (string.length == 4) {
-//      string.length == string.distinct.length
-//    }
-//    else
-//      false
-//  }
 
   private def randomizeNumber: List[Int] = {
     var number = List[Int]()
     while (number.size < 4) { // player vs computer
       val d = Random.nextInt(10)
       if (!number.contains(d))
-        if (number.size == 0 && d != 0)
+        if (number.isEmpty && d != 0)
           number = number :+ d
-        else if (number.size > 0)
+        else if (number.nonEmpty)
           number = number :+ d
     }
     number
@@ -169,16 +166,21 @@ class BullsAndCows {
         gameWon = true
         println(s"$getCurrentPlayer you won, congratulations!")
         guessResult = "4B0C"
+        db.insertResult(getCurrentPlayer, getOppositePlayer)
+        guessesArray.append((guess.mkString, guessResult))
+        db.insertHistory(guessesArray)
       }
       else {
         println( s"Bulls: $bulls Cows: $cows")
         guessResult = s"$bulls" + "B" + s"$cows" + "C"
+        guessesArray.append((guess.mkString, guessResult))
       }
     }
     guessResult
   }
 
   def printGuesses(): Array[(String, String)] = {
+    println("*" * 10 + " List of your guesses: " + "*" * 10)
     for (((guess, result), index) <- guessesArray.zipWithIndex) {
       val playerName = {
         if (playerB == "COMPUTER") playerA
@@ -190,7 +192,7 @@ class BullsAndCows {
   }
 
   private def PlayerVsPlayer: Unit = {
-    Greetings(1)
+    Greetings(3)
     getPlayerSecretNumber
     nextPlayer
     getPlayerSecretNumber
@@ -199,62 +201,60 @@ class BullsAndCows {
     while (!gameWon) {
       if (isPlayerATurn) {
         val guess = getGuess(s"Player $getCurrentPlayer, your guess: ")
-        val guessResult = BullsCowsCounter(numberB, guess)
-        guessesArray += ((guess.mkString, guessResult))
+        BullsCowsCounter(numberB, guess)
+//        guessesArray += ((guess.mkString, guessResult))
         nextPlayer
       }
       else {
         val guess = getGuess(s"Player $getCurrentPlayer, your guess: ")
-        val guessResult = BullsCowsCounter(numberA, guess)
-        guessesArray += ((guess.mkString, guessResult))
+        BullsCowsCounter(numberA, guess)
+//        guessesArray += ((guess.mkString, guessResult))
         nextPlayer
       }
     }
   }
 
-  private def PlayerVsComputer: Unit = {
-    Greetings(2)
+  private def SinglePlayerVsComputer: Unit = {
+    Greetings(1)
     nextPlayer
     getPlayerSecretNumber
     nextPlayer
 
     while (!gameWon) {
       val guess = getGuess(s"Player $getCurrentPlayer, your guess: ")
-      val guessResult = BullsCowsCounter(numberB, guess)
-      guessesArray += ((guess.mkString, guessResult))
+      BullsCowsCounter(numberB, guess)
+//      guessesArray += ((guess.mkString, guessResult))
     }
   }
 
   private def TwoPlayersVsComputer: Unit = {
-    Greetings(3)
+    Greetings(2)
     val computerSecretNumberList = randomizeNumber
+    println(s"The secret number is ${computerSecretNumberList.mkString}") //TODO delete later
     while (!gameWon) {
-      if (isPlayerATurn) {
-        val guess = getGuess(s"Player $getCurrentPlayer, your guess: ")
-        val guessResult = BullsCowsCounter(computerSecretNumberList, guess)
-        guessesArray += ((guess.mkString, guessResult))
-        nextPlayer
+      val guess = getGuess(s"Player $getCurrentPlayer, your guess: ")
+      BullsCowsCounter(computerSecretNumberList, guess)
+      nextPlayer
       }
-      else {
-        val guess = getGuess(s"Player $getCurrentPlayer, your guess: ")
-        val guessResult = BullsCowsCounter(computerSecretNumberList, guess)
-        guessesArray += ((guess.mkString, guessResult))
-        nextPlayer
-      }
-    }
+  }
 
-
+  /** Prints the scoreboard. */
+  private def scoreboard: Unit = {
+    db.getScoreboard
+    println("\n"*2)
+    Play
   }
 
   /** Displays game menu, asks to choose game mode, and launches that mode */
   def Play: Unit = {
     Menu
-    val gameOption = getInteger("Choose game mode: ", 1)
+    gameOption = getInteger("Choose game mode: ", 1)
 
     gameOption match {
-      case 1 => PlayerVsComputer
+      case 1 => SinglePlayerVsComputer
       case 2 => TwoPlayersVsComputer
       case 3 => PlayerVsPlayer
+      case 4 => scoreboard
       case _ => Play
     }
 
