@@ -1,9 +1,8 @@
-package com.github.ristinak
+package com.github.ristinak.Final
 
 import org.sqlite.SQLiteException
 
 import java.sql.{Connection, DriverManager, PreparedStatement}
-import scala.collection.mutable.ArrayBuffer
 
 class  BullsAndCowsDatabase(val dbPath: String) {
   val url = s"jdbc:sqlite:$dbPath"

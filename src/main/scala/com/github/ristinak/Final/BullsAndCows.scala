@@ -1,5 +1,4 @@
-package com.github.ristinak
-
+package com.github.ristinak.Final
 
 import scala.collection.mutable.ArrayBuffer
 import scala.io.StdIn.readLine
